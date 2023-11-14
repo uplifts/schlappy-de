@@ -10306,6 +10306,10 @@ html.hide-size-selected .klaviyo-bis-trigger {
   display: none;
 }
 
+#size_advisor_content .size_recommend_product .row-element {
+  background-color: #f9f9f9 !important; 
+}
+
 /* START - ID|02.11.23 - Discount codes on website */
 .docapp-cart-with-coupon-summary:not(:empty) + .cart-drawer__summary {
   display: none;
