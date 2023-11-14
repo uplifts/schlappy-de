@@ -15,7 +15,7 @@ NOTE TO DEVELOPERS: welcome to Impact theme! We hope that you will enjoy editing
 {% render "load-tracify" %}
 
     <!-- ABlyft Snippet from Uplifts -->
-    <script src="https://cdn.ablyft.com/s/16979678.js"></script>
+    <script data-src="https://cdn.ablyft.com/s/16979678.js"></script>
 
     <!-- Start VWO Async SmartCode -->
 <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
@@ -101,10 +101,6 @@ f=false,w=window,d=document,v=d.querySelector('#vwoCode'),cK='_vwo_'+account_id+
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
 
-
-<script>(() => {const installerKey = 'docapp-discount-auto-install'; const urlParams = new URLSearchParams(window.location.search); if (urlParams.get(installerKey)) {window.sessionStorage.setItem(installerKey, JSON.stringify({integrationId: urlParams.get('docapp-integration-id'), divClass: urlParams.get('docapp-install-class'), check: urlParams.get('docapp-check')}));}})();</script>
-
-<script>(() => {const previewKey = 'docapp-discount-test'; const urlParams = new URLSearchParams(window.location.search); if (urlParams.get(previewKey)) {window.sessionStorage.setItem(previewKey, JSON.stringify({active: true, integrationId: urlParams.get('docapp-discount-inst-test')}));}})();</script>
 </head>
 
   <body class="{% if settings.show_page_transition %}page-transition{% endif %} {% if settings.zoom_image_on_hover %}zoom-image--enabled{% endif %}">

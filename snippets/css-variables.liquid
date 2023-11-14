@@ -351,4 +351,9 @@ note that this may have impact on different places.
       }
 
   {%- endcase -%}
+
+  :root {
+    --discount-banner-background: {{ settings.discount_code_label_background | default: '#f123b7' }};
+    --discount-banner-color: {{ settings.discount_code_label_color | default: '#fff' }};
+  }
 </style>

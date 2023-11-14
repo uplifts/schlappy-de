@@ -10306,6 +10306,70 @@ html.hide-size-selected .klaviyo-bis-trigger {
   display: none;
 }
 
-#size_advisor_content .size_recommend_product .row-element {
-background-color: #f9f9f9 !important; 
+/* START - ID|02.11.23 - Discount codes on website */
+.docapp-cart-with-coupon-summary:not(:empty) + .cart-drawer__summary {
+  display: none;
 }
+
+.discode-topbanner,
+.discount-code-badge {
+  background-color: var(--discount-banner-background);
+  color: var(--discount-banner-color);
+}
+
+.discode-topbanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 4px 20px;
+  gap: 8px;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.discode-topbanner .icon {
+  height: 24px;
+  width: 24px;
+  flex: 0 0 24px;
+}
+
+.discount-code-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.discount-code-badge.badge-on-card {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 13px;
+}
+
+.product-info__price .discount-code-badge {
+  margin-bottom: 8px;
+}
+
+.cart-drawer .buy-buttons .button:only-child {
+  width: 100%;
+}
+
+@media (min-width: 1000px) {
+  .discode-topbanner .icon {
+    height: 1.33em;
+    width: 1.33em;
+    flex: 0 0 1.33em;
+  }
+}
+
+@media (max-width: 699px) {
+  .cart-drawer {
+    padding: 0;
+    max-width: calc(100% - 40px);
+  }
+  .cart-drawer.drawer::part(content) {
+    border-radius: 0;
+    clip-path: none !important;
+  }
+}
+/* END - ID|02.11.23 - Discount codes on website */

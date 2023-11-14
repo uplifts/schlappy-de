@@ -40,13 +40,14 @@ Supported variables
     VARIANT CASE (used on product page, quick view...)
     --------------------------------------------------------------------------------------------------------------------
     {%- endcomment -%}
+    <!-- variant != blank -->
     <sale-price {% if form_id %}form="{{ form_id }}"{% endif %} class="{% if variant.compare_at_price > variant.price %}{{ on_sale_price_classes }}{% else %}{{ regular_price_classes }}{% endif %}">
       <span class="sr-only">{{ 'product.price.sale_price' | t }}</span>
 
       {%- if settings.currency_code_enabled -%}
-        {{- variant.price | money_with_currency -}}
+        <span class="money" data-raw-price="{{ variant.price }}">{{- variant.price | money_with_currency -}}</span>
       {%- else -%}
-        {{- variant.price | money -}}
+        <span class="money" data-raw-price="{{ variant.price }}">{{- variant.price | money -}}</span>
       {%- endif -%}
     </sale-price>
 
@@ -65,7 +66,7 @@ Supported variables
     LINE ITEM CASE (used on cart, order page...)
     --------------------------------------------------------------------------------------------------------------------
     {%- endcomment -%}
-    
+    <!-- line_item != blank -->
     {%- assign old_item_price = line_item.variant.compare_at_price | times: line_item.quantity -%}
     <sale-price class="{% if line_item.original_line_price > line_item.final_line_price or old_item_price > line_item.final_line_price %}{{ on_sale_price_classes }}{% else %}{{ regular_price_classes }}{% endif %}">
       <span class="sr-only">{{ 'product.price.sale_price' | t }}</span>
@@ -143,9 +144,9 @@ Supported variables
         <span class="sr-only">{{ 'product.price.sale_price' | t }}</span>
 
         {%- if settings.currency_code_enabled -%}
-          {{- product.price | money_with_currency -}}
+          <span class="money" data-raw-price="{{ product.price }}">{{- product.price | money_with_currency -}}</span>
         {%- else -%}
-          {{- product.price | money -}}
+          <span class="money" data-raw-price="{{ product.price }}">{{- product.price | money -}}</span>
         {%- endif -%}
       </sale-price>
 
@@ -184,9 +185,9 @@ Supported variables
         <span class="sr-only">{{ 'product.price.sale_price' | t }}</span>
 
         {%- if settings.currency_code_enabled -%}
-          {{- product.price | money_with_currency -}}
+          <span class="money" data-raw-price="{{ product.price }}">{{- product.price | money_with_currency -}}</span>
         {%- else -%}
-          {{- product.price | money -}}
+          <span class="money" data-raw-price="{{ product.price }}">{{- product.price | money -}}</span>
         {%- endif -%}
       </sale-price>
     {%- endif -%}

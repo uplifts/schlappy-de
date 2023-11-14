@@ -2898,8 +2898,8 @@ var SalePrice = class extends HTMLElement {
   }
   _onVariantChanged(event) {
     const variant = event.detail.variant;
-    this.lastChild.replaceWith(document.createRange().createContextualFragment(formatMoney(variant["price"], currencyFormat)));
-    this.classList.toggle("text-on-sale", variant["compare_at_price"] > variant["price"]);
+    this.lastChild.replaceWith(document.createRange().createContextualFragment(formatMoney(variant["price"]*window.discountMultiplier, currencyFormat)));
+    this.classList.toggle("text-on-sale", variant["compare_at_price"] > variant["price"]*window.discountMultiplier);
   }
 };
 var CompareAtPrice = class extends HTMLElement {
@@ -2916,7 +2916,7 @@ var CompareAtPrice = class extends HTMLElement {
   _onVariantChanged(event) {
     const variant = event.detail.variant;
     this.lastChild.replaceWith(document.createRange().createContextualFragment(formatMoney(variant["compare_at_price"], currencyFormat)));
-    this.hidden = !(variant["compare_at_price"] > variant["price"]);
+    this.hidden = !(variant["compare_at_price"] > variant["price"]*window.discountMultiplier);
   }
 };
 var UnitPrice = class extends HTMLElement {
@@ -2987,10 +2987,10 @@ var OnSaleBadge = class extends HTMLElement {
 _onVariantChanged2 = new WeakSet();
 onVariantChanged_fn2 = function(event) {
   const variant = event.detail.variant;
-  if (variant["compare_at_price"] > variant["price"]) {
+  if (variant["compare_at_price"] > variant["price"]*window.discountMultiplier) {
     this.hidden = false;
     if (this.hasAttribute("discount-mode")) {
-      const savings = this.getAttribute("discount-mode") === "percentage" ? `${Math.round((variant["compare_at_price"] - variant["price"]) * 100 / variant["compare_at_price"])}%` : formatMoney(variant["compare_at_price"] - variant["price"]);
+      const savings = this.getAttribute("discount-mode") === "percentage" ? `${Math.round((variant["compare_at_price"] - variant["price"]*window.discountMultiplier) * 100 / variant["compare_at_price"])}%` : formatMoney(variant["compare_at_price"] - variant["price"]*window.discountMultiplier);
       this.innerHTML = `${window.themeVariables.strings.discountBadge.replace("@@", savings)}`;
     }
   } else {
@@ -4240,3 +4240,48 @@ export {
   throttle,
   waitForEvent
 };
+
+
+// setCookieCustom
+var currencyFormat = window.themeVariables.settings.currencyCodeEnabled ? window.themeVariables.settings.moneyWithCurrencyFormat : window.themeVariables.settings.moneyFormat;
+const priceAdjustElements = document.querySelectorAll('.money[data-raw-price]');
+const savingsBadges = document.querySelectorAll('.savingsBadge');
+
+if (priceAdjustElements && window.discountMultiplier < 1) {
+  priceAdjustElements.forEach(el => {
+    let rawPrice = Number(el.dataset.rawPrice);
+    el.lastChild.replaceWith(document.createRange().createContextualFragment(formatMoney(rawPrice*window.discountMultiplier, currencyFormat)));
+  });
+}
+
+if (savingsBadges && window.discountMultiplier < 1) {
+  savingsBadges.forEach(el => {
+    let rawPrice = Number(el.dataset.rawPrice);
+    let rawComparePrice = Number(el.dataset.rawCompPrice);
+    let savingsPercent = Math.round((rawComparePrice - (rawPrice*window.discountMultiplier)) / rawComparePrice * 100);
+    // TODO in case if switch to amount mode
+    el.lastChild.replaceWith(document.createRange().createContextualFragment(savingsPercent + '%'));
+  });
+}
+
+if (getCookieCustom('discount_code')) {
+  let dCodePDPTopBannerEl = document.querySelectorAll('.dCodePDPTopBanner');
+  let dCodeBadgeEl = document.querySelectorAll('.dCodeBadge');
+  let dCodeNameEl = document.querySelectorAll('.dCodeName');
+  let dCodePercentEl = document.querySelectorAll('.dCodePercent');
+
+  if (dCodePDPTopBannerEl && codeValue && codeName) {
+    dCodePDPTopBannerEl.forEach(bnr => {
+      bnr.classList.remove('d-none');
+    });
+    dCodeBadgeEl && dCodeBadgeEl.forEach(badge => {
+      badge.classList.remove('d-none');
+    });
+    dCodeNameEl && dCodeNameEl.forEach(cnm => {
+      cnm.innerHTML = codeName;
+    });
+    dCodePercentEl && dCodePercentEl.forEach(prcnt => {
+      prcnt.innerHTML = codeValue;
+    });
+  }
+}

@@ -50,7 +50,13 @@ Supported variables
 
           {%- if form_id != blank or is_variant_on_sale -%}
             {%- if settings.discount_mode == 'percentage' -%}
-              {%- assign savings = variant.compare_at_price | minus: variant.price | times: 100.0 | divided_by: variant.compare_at_price | round | append: '%' -%}
+              {%- capture savings -%}
+                <span class="savingsBadge"
+                data-raw-price="{{ variant.price }}"
+                data-raw-comp-price="{{ variant.compare_at_price }}">
+                  {{- variant.compare_at_price | minus: variant.price | times: 100.0 | divided_by: variant.compare_at_price | round | append: '%' -}}
+                </span>
+              {%- endcapture -%}
             {%- else -%}
               {%- capture savings -%}{{ variant.compare_at_price | minus: variant.price | money }}{%- endcapture -%}
             {%- endif -%}

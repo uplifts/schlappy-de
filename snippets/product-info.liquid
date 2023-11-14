@@ -54,6 +54,12 @@
 
       {%- when 'price' -%}
         <div class="product-info__price">
+          {%- if settings.discount_code_badge != blank -%}
+            <div class="discount-code-badge dCodeBadge d-none">
+              {{ settings.discount_code_badge }}
+            </div>
+          {%- endif -%}
+          
           <div class="rating-with-text">
             <div class="price-wrapper">
               {%- render 'price-list',

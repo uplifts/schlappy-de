@@ -157,6 +157,14 @@ Supported variables
         <span class="product-card__title"><a href="{{ product.url }}" class="bold" data-instant>{{ product.title }}</a></span>
       {%- endif -%}
 
+      {%- if settings.discount_code_badge != blank -%}
+        <div class="dCodeBadge d-none">
+          <div class="discount-code-badge badge-on-card">
+            {{ settings.discount_code_badge }}
+          </div>
+        </div>
+      {%- endif -%}
+
       {%- render 'price-list', product: product, text_alignment: text_alignment -%}
     </div>
 

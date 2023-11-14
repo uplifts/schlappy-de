@@ -102,49 +102,63 @@
 
     <div class="v-stack gap-4 sm:gap-6" slot="footer">
       <div class="v-stack gap-2">
-        {% for discount_application in cart.cart_level_discount_applications %}
-          <div class="h-stack gap-4 justify-between">
-            <div class="badge">
-              {%- render 'icon' with 'discount' -%} {{- discount_application.title -}}
-            </div>
 
-            <span class="text-subdued">-{{ discount_application.total_allocated_amount | money }}</span>
-          </div>
+        {% assign cart_savings = 0 %}
+        {% for item in cart.items %}
+          {% if item.variant.compare_at_price > item.variant.price %}
+            {% assign item_savings = item.variant.compare_at_price | minus: item.variant.price %}
+            {% assign line_savings = item_savings | times: item.quantity %}
+            {% assign cart_savings =line_savings | plus: cart_savings %}
+          {% endif %}
         {% endfor %}
+        <div id="docapp-cart-savings" data-savings="{{ cart_savings }}" data-compare-title="Zwischensumme" data-savings-title="Rabattaktion"></div>
+        <div class="docapp-cart-with-coupon-summary"></div>
 
-        <div class="cart-drawer__footer-bonuses h-stack gap-4 justify-between">
-          <span>{{ 'cart.general.shipping_costs' | t }}</span>
-          <span class="font-weight-500" style="color:#007600">{{ 'cart.general.free' | t }}</span>
-        </div>
-
-        <div class="cart-drawer__footer-bonuses h-stack gap-4 justify-between">
-          <span>{{ 'cart.general.exchanges' | t }}</span>
-          <span class="font-weight-500" style="color:#007600">{{ 'cart.general.free' | t }}</span>
-        </div>
-
-        <div class="h-stack gap-4 justify-between">
-          <span class="bold">{{ 'cart.general.total' | t }}</span>
-          <span class="h-stack gap-1 sm:gap-2">
-            {%- if original_total > cart.total_price -%}
-              <span class="text-subdued line-through">
-                {{ original_total | money_with_currency }}
-              </span>
+        <div class="cart-drawer__summary v-stack gap-2">
+          {% for discount_application in cart.cart_level_discount_applications %}
+            <div class="h-stack gap-4 justify-between">
+              <div class="badge">
+                {%- render 'icon' with 'discount' -%} {{- discount_application.title -}}
+              </div>
+  
+              <span class="text-subdued">-{{ discount_application.total_allocated_amount | money }}</span>
+            </div>
+          {% endfor %}
+  
+          <div class="cart-drawer__footer-bonuses h-stack gap-4 justify-between">
+            <span>{{ 'cart.general.shipping_costs' | t }}</span>
+            <span class="font-weight-500" style="color:#007600">{{ 'cart.general.free' | t }}</span>
+          </div>
+  
+          <div class="cart-drawer__footer-bonuses h-stack gap-4 justify-between">
+            <span>{{ 'cart.general.exchanges' | t }}</span>
+            <span class="font-weight-500" style="color:#007600">{{ 'cart.general.free' | t }}</span>
+          </div>
+  
+          <div class="h-stack gap-4 justify-between">
+            <span class="bold">{{ 'cart.general.total' | t }}</span>
+            <span class="h-stack gap-1 sm:gap-2">
+              {%- if original_total > cart.total_price -%}
+                <span class="text-subdued line-through">
+                  {{ original_total | money_with_currency }}
+                </span>
+              {%- endif -%}
+              {{- cart.total_price | money_with_currency -}}
+            </span>
+          </div>
+  
+          {%- if section.settings.show_shipping_text -%}
+            {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
+              <p class="text-subdued text-sm">{{ 'cart.general.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}</p>
+            {%- elsif cart.taxes_included -%}
+              <p class="text-subdued text-sm">{{ 'cart.general.taxes_included_but_shipping_at_checkout' | t }}</p>
+            {%- elsif shop.shipping_policy.body != blank -%}
+              <p class="text-subdued text-sm">{{ 'cart.general.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}</p>
+            {%- else -%}
+              <p class="text-subdued text-sm">{{ 'cart.general.taxes_and_shipping_at_checkout' | t }}</p>
             {%- endif -%}
-            {{- cart.total_price | money_with_currency -}}
-          </span>
-        </div>
-
-        {%- if section.settings.show_shipping_text -%}
-          {%- if cart.taxes_included and shop.shipping_policy.body != blank -%}
-            <p class="text-subdued text-sm">{{ 'cart.general.taxes_included_and_shipping_policy_html' | t: link: shop.shipping_policy.url }}</p>
-          {%- elsif cart.taxes_included -%}
-            <p class="text-subdued text-sm">{{ 'cart.general.taxes_included_but_shipping_at_checkout' | t }}</p>
-          {%- elsif shop.shipping_policy.body != blank -%}
-            <p class="text-subdued text-sm">{{ 'cart.general.taxes_and_shipping_policy_at_checkout_html' | t: link: shop.shipping_policy.url }}</p>
-          {%- else -%}
-            <p class="text-subdued text-sm">{{ 'cart.general.taxes_and_shipping_at_checkout' | t }}</p>
           {%- endif -%}
-        {%- endif -%}
+        </div>
 
         {%- if section.settings.show_cart_note -%}
           <button type="button" class="justify-self-start" aria-controls="cart-drawer-note">
