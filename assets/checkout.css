@@ -1,0 +1,192 @@
+.header-logos--trust {
+  max-width: 230px;
+  margin: 0 auto;
+}
+
+@media (max-width: 999px) {
+  .main .header-logos--trust {
+    display: none !important;
+  }
+
+  .hidden-pocket {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hidden-laptop {
+    display: none;
+  }
+}
+
+.checkout-supportbox {
+  background-color: #F8F8F8;
+  border-radius: 10px;
+  padding: 16px 20px;
+  border: 1px solid #D7D7D7;
+}
+
+.checkout-supportbox--top-status {
+  color: #2A4C28;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.checkout-supportbox--top-status:before {
+  content: '●';
+  color: #22BC28;
+  font-size: 20px;
+  line-height: 14px;
+}
+
+.checkout-supportbox--footer-person {
+  font-size: 11px;
+}
+
+.checkout-supportbox--footer-person-photo {
+  width: 92px;
+  margin-right: 24px;
+}
+
+.checkout-supportbox {
+  background-color: #EFEFEF;
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+
+.checkout-supportbox--top-title {
+  margin-right: 20px;
+}
+
+.checkout-supportbox--middle {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.checkout-supportbox--footer-contacts {
+  padding-top: 4px;
+  line-height: 1.5;
+}
+
+.mw-100 {
+  max-width: 100% !important;
+}
+
+.d-flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-item-auto {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+
+.flex-align-center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (min-width: 1000px) {
+  .checkout-supportbox--middle {
+    padding-bottom: 10px;
+  }
+
+  .checkout-supportbox {
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    padding: 20px 24px;
+  }
+
+  .checkout-supportbox--footer-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .checkout-supportbox--footer-contacts {
+    padding-top: 0;
+    padding-left: 8px;
+    margin-left: 8px;
+    border-left: 2px solid #DDDDDD;
+  }
+
+  .checkout-supportbox--footer-person-photo {
+    width: 58px;
+    margin-right: 10px;
+  }
+}
+
+.checkout-page--payicons {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 8px;
+  padding-right: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 8px;
+}
+
+.checkout-page--payicons .icon--payment {
+  display: inline-flex;
+  padding-right: 10px;
+}
+
+.checkout-footer__text {
+  margin: 15px 0;
+}
+
+.checkout-supportbox--footer-person h2,
+.checkout-supportbox--footer-contacts b {
+  font-weight: 700;
+}
+
+@media (min-width: 1000px) {
+  .checkout-footer__text {
+    margin-top: 0;
+  }
+  
+  .order-summary__sections {
+    height: auto !important;
+  }
+}
+
+/* START - ID|18.07.23 - Checkout extra payment methods */
+.express-checkout--extra {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.express-checkout--extra-heading + .express-checkout--extra-icons {
+  margin-top: 12px;
+}
+
+.express-checkout--extra-heading {
+  font-size: 12px;
+}
+
+.express-checkout--extra-icons img {
+  height: 24px;
+  max-width: 100%;
+}
+
+@media (min-width: 1000px) {
+  .express-checkout--extra-heading {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 999px) {
+  .express-checkout--extra {
+    margin-bottom: 20px;
+  }
+}
+/* END - ID|18.07.23 - Checkout extra payment methods */

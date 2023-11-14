@@ -1,0 +1,222 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "f74642b3-2eb2-47b8-bef1-034240c36fe5": {
+      "type": "slideshow",
+      "blocks": {
+        "template--17896945713416__f74642b3-2eb2-47b8-bef1-034240c36fe5-1678968867f7f75ac5-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jason-goodman-nF0nQuqBsrI-unsplash.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "",
+            "title": "Über Uns",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 27,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17896945713416__f74642b3-2eb2-47b8-bef1-034240c36fe5-1678968867f7f75ac5-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": true,
+        "image_size": "sm",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#ffffff",
+        "background_gradient": ""
+      }
+    },
+    "d1e89dc0-9410-4906-8214-ba64ec11e4a5": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17896945713416__d1e89dc0-9410-4906-8214-ba64ec11e4a5-167896897744a54256-0": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Die besten Schlappen",
+            "heading_tag": "h4",
+            "content": "<p>Wir arbeiten mit Leidenschaft daran, unseren Kunden das bestmögliche Produkt bieten zu können. Meist sind die <strong>Stückzahlen stark limitiert.<\/strong><\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17896945713416__d1e89dc0-9410-4906-8214-ba64ec11e4a5-167896897744a54256-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Kundenzufriedenheit",
+            "heading_tag": "h4",
+            "content": "<p>Unseren Fokus legen wir auf <strong>Kundenzufriedenheit<\/strong>! Wir möchten, dass Du als Kunde ein außergewöhnlich gutes Kauferlebnis genießt und wollen Dich so als wiederkehrenden, glücklichen Kunden begrüßen dürfen.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17896945713416__d1e89dc0-9410-4906-8214-ba64ec11e4a5-167896897744a54256-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Soziale Verantwortung",
+            "heading_tag": "h4",
+            "content": "<p>Als junges Start-up-Unternehmen, legen wir großen Wert auf Nachhaltigkeit, faire Arbeitsbedingungen, das Gemeinwohl und Spenden an wohltätige Organisationen. Wir möchten nicht nur qualitativ hochwertige Produkte anbieten, sondern auch einen positiven Beitrag zur Verbesserung der Welt leisten.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17896945713416__d1e89dc0-9410-4906-8214-ba64ec11e4a5-167896897744a54256-0",
+        "template--17896945713416__d1e89dc0-9410-4906-8214-ba64ec11e4a5-167896897744a54256-1",
+        "template--17896945713416__d1e89dc0-9410-4906-8214-ba64ec11e4a5-167896897744a54256-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": true,
+        "gap": "large",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Was uns antreibt...",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "9dffe071-6ff6-4f88-9005-906142e0cc14": {
+      "type": "custom-liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<br>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1ed79040-e535-4b3c-8e7a-1ed40ba1cc55": {
+      "type": "media-with-text",
+      "blocks": {
+        "template--17896945713416__1ed79040-e535-4b3c-8e7a-1ed40ba1cc55-16789690398807960e-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/schlappy-office.jpg",
+            "media_width": 40,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Schlappy macht es möglich.",
+            "content": "<p>Wir bieten Dir den <strong>Sofort- und Langzeiteffekt,<\/strong> den Du verdienst! Wir haben unser Unternehmen 2020 gestartet und weltweit über <strong>100.000 Menschen<\/strong> mit unseren Schlappys glücklich gemacht.<br\/><br\/>Wenn unsere Schlappen jedoch, nur minimal das Wohlbefinden unserer Kunden verbessert, sind wir mehr als zufrieden.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "linear-gradient(335deg, rgba(228, 234, 249, 1), rgba(250, 250, 255, 1) 100%)",
+            "text_color": "#1e1864",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "a30c912a-35d8-4ba4-9b9b-9efa28c99c35": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2880px-Heusenstamm_Luftbild_003.jpg",
+            "media_width": 40,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Wir sind für dich da.",
+            "content": "<p>Deine Zufriedenheit steht bei uns an oberster Stelle. Du erlebst bei uns ein einzigartiges Einkaufserlebnis, dass glücklich macht. Wir lösen jedes Problem unkompliziert. Solltest Du an einem Punkt nicht zu <strong>100% zufrieden <\/strong>sein, sind wir für Dich da.<br\/><br\/>Viele unserer <strong>Kunden empfehlen uns weiter, <\/strong>da Sie von dem  Produktsortiment und unserem Kundenservice überzeugt sind. Gerne überzeugen wir auch Dich von Schlappy.<br\/>Mache jetzt Deine erste Bestellung!<\/p><p>Du hast Fragen, Anregungen oder Wünsche?<br\/>Dann kontaktiere uns einfach über das Kontaktformular oder schreibe unkompliziert eine E-Mail an: <strong>support@schlappy.de<\/strong><\/p><p>Wir freuen uns Dich in Zukunft als Kunden begrüßen zu dürfen.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "linear-gradient(335deg, rgba(228, 234, 249, 1), rgba(250, 250, 255, 1) 100%)",
+            "text_color": "#1e1864",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17896945713416__1ed79040-e535-4b3c-8e7a-1ed40ba1cc55-16789690398807960e-0",
+        "a30c912a-35d8-4ba4-9b9b-9efa28c99c35"
+      ],
+      "settings": {
+        "full_width": false,
+        "enable_parallax": true,
+        "spacing": "small"
+      }
+    },
+    "7b0543bc-30d1-4729-9319-da8fc28af09d": {
+      "type": "blog-posts",
+      "disabled": true,
+      "blocks": {
+        "template--17896945713416__7b0543bc-30d1-4729-9319-da8fc28af09d-167897007700a61aa6-0": {
+          "type": "article",
+          "settings": {
+            "article": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17896945713416__7b0543bc-30d1-4729-9319-da8fc28af09d-167897007700a61aa6-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_excerpt": true,
+        "show_date": false,
+        "show_author": false,
+        "show_comments_count": false,
+        "show_category": true,
+        "subheading": "",
+        "title": "Unser Standort",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f74642b3-2eb2-47b8-bef1-034240c36fe5",
+    "d1e89dc0-9410-4906-8214-ba64ec11e4a5",
+    "9dffe071-6ff6-4f88-9005-906142e0cc14",
+    "1ed79040-e535-4b3c-8e7a-1ed40ba1cc55",
+    "7b0543bc-30d1-4729-9319-da8fc28af09d"
+  ]
+}

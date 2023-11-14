@@ -1,0 +1,115 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "e4bd21e6-5c22-444c-9674-e3fb17580898": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17898562519304__e4bd21e6-5c22-444c-9674-e3fb17580898-16789585966cc2cc88-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Rücksendung",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "41805219-8994-4242-a24f-1d17f2c09024": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Frage zur Bestellung",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "402df160-de5b-4415-b7af-c15012d68153": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Frage zum Produkt",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17898562519304__e4bd21e6-5c22-444c-9674-e3fb17580898-16789585966cc2cc88-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Feedback",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "55c5928b-5d63-4f22-8069-a8f92fb7ed17": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "E-Mail",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "d7188e58-2158-4660-9be1-d8344ed1c9bc": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Whatsapp",
+            "heading_tag": "h4",
+            "content": "",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17898562519304__e4bd21e6-5c22-444c-9674-e3fb17580898-16789585966cc2cc88-1",
+        "41805219-8994-4242-a24f-1d17f2c09024",
+        "402df160-de5b-4415-b7af-c15012d68153",
+        "template--17898562519304__e4bd21e6-5c22-444c-9674-e3fb17580898-16789585966cc2cc88-2",
+        "55c5928b-5d63-4f22-8069-a8f92fb7ed17",
+        "d7188e58-2158-4660-9be1-d8344ed1c9bc"
+      ],
+      "custom_css": [
+        ".multi-column__item {border: 1px solid; padding: 60px; margin: 1px; border-radius: 20px; border-color: #E4EAF9;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "stack_on_mobile": true,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Hilfebereich",
+        "content": "<p>Damit wir dein Anliegen so schnell wie möglich bearbeiten können, haben wir kurze Formulare zum Ausfüllen erstellt. Klicke einfach auf das entsprechende Feld und fülle das Formular aus. So musst du nicht extra eine Mail formulieren und wir können dein Anliegen schneller lösen.<\/p>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "e4bd21e6-5c22-444c-9674-e3fb17580898"
+  ]
+}

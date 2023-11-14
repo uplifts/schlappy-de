@@ -1,0 +1,151 @@
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "message": {
+          "type": "message",
+          "settings": {
+            "text": "Kostenloser Versand mit DHL",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "message"
+      ],
+      "custom_css": [],
+      "settings": {
+        "enable_sticky": false,
+        "text_size": "text-xs",
+        "navigation_mode": "arrows",
+        "scrolling_speed": 10,
+        "announcement_left_icon_desktop_1": "shopify:\/\/shop_images\/reviews-bewertungen-47.png",
+        "announcement_left_icon_mobile_1": "shopify:\/\/shop_images\/verified_FILL1_wght700_GRAD-25_opsz40.png",
+        "announcement_left_text_desktop": "<b>4.74<\/b> | 748+ Bewertungen",
+        "announcement_left_text_mobile": "4.74",
+        "announcement_right_menu": "main-menu-right",
+        "announcement_right_icon_1": "shopify:\/\/shop_images\/Klarna_PaymentBadge_OutsideCheckout_Pink-300x150_7ae83c57-114f-4a99-8684-8c2e1d067078.png",
+        "background": "#e4eaf9",
+        "background_gradient": "linear-gradient(175deg, rgba(250, 250, 255, 1), rgba(228, 234, 249, 1) 100%, rgba(247, 197, 204, 1) 100%)",
+        "text_color": "#1e1864"
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "555b1804-c108-463a-90f2-9707dd4a9a2c": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_item": "Shop",
+            "layout": "horizontal_center",
+            "submenu_style": "bold_heading",
+            "image_1": "shopify:\/\/shop_images\/oroginal5_b0259abb-59f7-4fd1-ad66-68112b8c2c53.jpg",
+            "image_heading_1": "Original",
+            "image_link_1": "shopify:\/\/products\/original",
+            "image_text_color_1": "#74b8dd",
+            "image_2": "shopify:\/\/shop_images\/Schlappy_Belt_beige_07.jpg",
+            "image_heading_2": "Belt",
+            "image_link_2": "shopify:\/\/products\/belt",
+            "image_text_color_2": "#c4b399",
+            "image_3": "shopify:\/\/shop_images\/Schlappy_Fur_orange_07.jpg",
+            "image_heading_3": "Fur",
+            "image_link_3": "shopify:\/\/products\/fur",
+            "image_text_color_3": "#f18160",
+            "product": "",
+            "product_card_background": "",
+            "product_card_text_color": "",
+            "promo_content_layout": "grid",
+            "stretch_promo": false,
+            "drawer_link_image": "hide"
+          }
+        },
+        "1a60ebd1-a416-4385-94ef-0741457e80f7": {
+          "type": "mega_menu",
+          "disabled": true,
+          "settings": {
+            "menu_item": "",
+            "layout": "horizontal",
+            "submenu_style": "bold_heading",
+            "image_heading_1": "",
+            "image_link_1": "",
+            "image_text_color_1": "#ffffff",
+            "image_heading_2": "",
+            "image_link_2": "",
+            "image_text_color_2": "#ffffff",
+            "image_heading_3": "",
+            "image_link_3": "",
+            "image_text_color_3": "#ffffff",
+            "product": "",
+            "product_card_background": "",
+            "product_card_text_color": "",
+            "promo_content_layout": "grid",
+            "stretch_promo": false,
+            "drawer_link_image": "hide"
+          }
+        },
+        "c68f4c41-cc64-417c-98c8-0bcec6ebff53": {
+          "type": "mega_menu",
+          "disabled": true,
+          "settings": {
+            "menu_item": "",
+            "layout": "horizontal",
+            "submenu_style": "bold_heading",
+            "image_heading_1": "",
+            "image_link_1": "",
+            "image_text_color_1": "#ffffff",
+            "image_heading_2": "",
+            "image_link_2": "",
+            "image_text_color_2": "#ffffff",
+            "image_heading_3": "",
+            "image_link_3": "",
+            "image_text_color_3": "#ffffff",
+            "product": "",
+            "product_card_background": "",
+            "product_card_text_color": "",
+            "promo_content_layout": "grid",
+            "stretch_promo": false,
+            "drawer_link_image": "hide"
+          }
+        }
+      },
+      "block_order": [
+        "555b1804-c108-463a-90f2-9707dd4a9a2c",
+        "1a60ebd1-a416-4385-94ef-0741457e80f7",
+        "c68f4c41-cc64-417c-98c8-0bcec6ebff53"
+      ],
+      "custom_css": [
+        ".bold {font-weight: 500;}",
+        ".count-bubble {font-weight: 500;}"
+      ],
+      "settings": {
+        "enable_sticky": true,
+        "hide_on_scroll": false,
+        "logo": "shopify:\/\/shop_images\/1_3672634f-db58-45a6-ae65-64e6c4929da0.png",
+        "logo_max_width": 130,
+        "logo_mobile_max_width": 130,
+        "menu": "hauptmenu",
+        "sidebar_menu": "",
+        "secondary_menu": "",
+        "menu_open_trigger": "hover",
+        "opening_from": "left",
+        "layout": "logo_left_navigation_center",
+        "show_social_media": false,
+        "show_locale_selector": false,
+        "show_country_selector": false,
+        "show_country_flag": false,
+        "show_country_name": false,
+        "transparent_header_text_color": "#1f2743",
+        "reduce_padding": true,
+        "background_opacity": 100,
+        "background_blur_radius": 0
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

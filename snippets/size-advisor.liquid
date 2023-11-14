@@ -1,0 +1,402 @@
+<div id="size_advisor_content" class="{{ class }} product-{{ productName }}">
+  <div class="size_advisor">
+    {%- if block.settings.sz_adv_caption != blank -%}
+      <p>{{ block.settings.sz_adv_caption }}</p>
+    {%- endif -%}
+    <p class="size_advisor_btn"><span>{{ block.settings.sz_adv_btn_caption | default: 'Größenberater' }}</span></p>
+  </div>
+  <div class="bg_overlay d_none">
+    <div class="pop_up_container d_none">
+      <div class="pop_up_wrap">
+        <div class="cross_icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M17.6582 6.343L6.34424 17.657L17.6582 6.343ZM17.6582 17.657L6.34424 6.343L17.6582 17.657Z" fill="black"/>
+            <path d="M17.6582 6.343L6.34424 17.657M17.6582 17.657L6.34424 6.343" stroke="black" stroke-width="2"/>
+          </svg>
+        </div>
+        {%- if block.settings.sz_adv_popup_title != blank -%}
+          <p class="pop-up-title">{{ block.settings.sz_adv_popup_title }}</p>
+        {%- endif -%}
+        <hr>
+        <div class="size_recommendation_wrap">
+          <div class="coustom-row size_recommend_product">
+            <div class="size_smaller_product row-element element-1">
+              <svg width="18" height="45" viewBox="0 0 18 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.424 20.8376C17.424 22.8026 17.0193 24.9236 16.2603 26.951C15.8556 28.0427 15.4002 29.1344 14.9702 30.2261C14.4136 31.6297 13.9077 33.0333 13.6041 34.5617C13.3258 35.9029 13.1993 37.2753 13.1993 38.6789C13.1993 40.2385 12.8199 41.6421 12.0356 42.8897C11.3273 44.0126 10.4166 44.73 9.2782 44.9483C8.89873 45.0107 8.51927 45.0107 8.1398 44.9795C7.45677 44.9483 6.77373 44.8236 6.11599 44.5116C4.87641 43.9502 4.09219 42.8585 3.71272 41.299C3.43445 40.1761 3.35855 39.0532 3.45974 37.8991C3.56094 36.7139 3.9151 35.6534 4.47165 34.6864C4.92701 33.9067 5.45826 33.1893 5.96421 32.4719C6.39427 31.8792 6.79903 31.2554 7.1279 30.538C7.55796 29.6023 7.78564 28.6042 7.78564 27.5125C7.81094 26.2648 7.60855 25.0796 7.1026 23.9567C6.77373 23.2393 6.36897 22.6155 5.88832 22.054C5.30647 21.399 4.69933 20.744 4.11748 20.1202C3.51034 19.434 2.9285 18.7166 2.54903 17.812C2.09367 16.7827 1.94189 15.691 2.01778 14.5681C2.04308 13.8508 2.19486 13.1957 2.49843 12.5719C2.92849 11.6674 3.58623 11.1371 4.39576 10.8252C5.05349 10.5445 5.73653 10.4509 6.44486 10.4821C8.26629 10.5133 10.0624 10.8876 11.7827 11.6362C12.8452 12.1041 13.8571 12.7279 14.7425 13.57C16.1086 14.8801 16.994 16.5332 17.3228 18.623C17.3987 19.2468 17.4493 19.9018 17.424 20.8376Z" fill="black"/>
+                <path d="M5.18006 4.58698C5.15476 5.5539 5.07887 6.36487 4.7247 7.14465C4.44643 7.76847 4.06696 8.23634 3.45982 8.3611C2.92857 8.45468 2.44792 8.26753 2.01786 7.89324C1.41072 7.36299 1.05655 6.6144 0.803572 5.77224C0.5 4.71174 0.424107 3.65124 0.575893 2.55955C0.677083 1.87335 0.904762 1.21833 1.30952 0.719275C2.01786 -0.185268 3.00447 -0.24765 3.78869 0.59451C4.39583 1.21833 4.75 2.06049 4.97768 2.99623C5.02827 3.27695 5.07887 3.52648 5.10417 3.8072C5.15476 4.05673 5.15476 4.36864 5.18006 4.58698Z" fill="black"/>
+                <path d="M9.65774 4.77409C9.63244 5.74101 9.45536 6.4896 9.0253 7.08223C8.46875 7.83082 7.65923 7.86201 7.05208 7.17581C6.62202 6.67675 6.39435 6.05293 6.29316 5.33553C6.16667 4.55575 6.21726 3.77597 6.49554 3.05858C6.74851 2.43475 7.10268 1.9357 7.68452 1.77974C7.9881 1.68617 8.26637 1.84212 8.51935 2.02927C9.0759 2.46594 9.37947 3.12096 9.55655 3.90074C9.60715 4.21265 9.63244 4.55575 9.65774 4.77409Z" fill="black"/>
+                <path d="M13.0477 5.92817C13.0224 6.58319 12.9212 7.17582 12.6176 7.70607C12.5164 7.89321 12.3899 8.04917 12.2381 8.17393C11.8587 8.48585 11.4286 8.39227 11.0744 7.98679C10.7962 7.64368 10.6444 7.20701 10.5432 6.73914C10.4167 5.92817 10.442 5.14839 10.7456 4.39981C10.8468 4.15028 10.9732 3.93194 11.1503 3.77598C11.5045 3.43288 11.9346 3.43288 12.314 3.74479C12.6682 4.0567 12.8453 4.52457 12.9212 5.02363C12.9971 5.30435 13.0224 5.61626 13.0477 5.92817Z" fill="black"/>
+                <path d="M13.5283 8.23633C13.5283 7.36298 13.756 6.67677 14.3125 6.20891C14.4137 6.11533 14.5402 6.05295 14.6667 5.99057C14.8944 5.8658 15.1221 5.92819 15.3244 6.11533C15.628 6.42724 15.8051 6.80154 15.7798 7.3006C15.7798 8.01799 15.628 8.7042 15.1727 9.26564C14.9956 9.48398 14.7932 9.63993 14.5655 9.73351C14.2872 9.85827 14.0596 9.7647 13.8825 9.51517C13.6801 9.26564 13.5789 8.92254 13.5536 8.57943C13.5536 8.42348 13.5283 8.29871 13.5283 8.23633Z" fill="black"/>
+                <path d="M17.5 10.8876C17.5 11.3867 17.3988 11.8233 17.0952 12.1976C16.817 12.5407 16.4881 12.5407 16.1845 12.1976C16.1086 12.1041 16.058 12.0105 16.0074 11.9169C15.6786 11.2619 15.7039 10.2638 16.1086 9.67115C16.4122 9.20328 16.8423 9.20328 17.1458 9.67115C17.1964 9.73353 17.2217 9.79592 17.247 9.8583C17.4241 10.1702 17.5 10.5133 17.5 10.8876Z" fill="black"/>
+              </svg>
+              <p>{{ block.settings.sz_adv_option1_name | default: 'Normal/schmale Füße' }}</p>
+            </div>
+            <div class="usual_size_product row-element element-2">
+              <svg width="50" height="45" viewBox="0 0 50 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M34.0198 20.8376C34.0198 22.8026 33.5257 24.9236 32.5995 26.951C32.1054 28.0427 31.5497 29.1344 31.0248 30.2261C30.3455 31.6297 29.728 33.0333 29.3575 34.5617C29.0178 35.9029 28.8635 37.2753 28.8635 38.6789C28.8635 40.2385 28.4003 41.6421 27.4432 42.8897C26.5786 44.0126 25.4671 44.73 24.0777 44.9483C23.6145 45.0107 23.1514 45.0107 22.6882 44.9795C21.8546 44.9483 21.0209 44.8236 20.2182 44.5116C18.7052 43.9502 17.7481 42.8585 17.2849 41.299C16.9453 40.1761 16.8527 39.0532 16.9762 37.8991C17.0997 36.7139 17.5319 35.6534 18.2112 34.6864C18.767 33.9067 19.4154 33.1893 20.0329 32.4719C20.5578 31.8792 21.0518 31.2554 21.4532 30.538C21.9781 29.6023 22.256 28.6042 22.256 27.5125C22.2869 26.2648 22.0398 25.0796 21.4223 23.9567C21.0209 23.2393 20.5269 22.6155 19.9403 22.054C19.2301 21.399 18.4891 20.744 17.7789 20.1202C17.0379 19.434 16.3278 18.7166 15.8646 17.812C15.3089 16.7827 15.1236 15.691 15.2162 14.5681C15.2471 13.8507 15.4324 13.1957 15.8029 12.5719C16.3278 11.6674 17.1305 11.1371 18.1186 10.8252C18.9214 10.5445 19.755 10.4509 20.6195 10.4821C22.8426 10.5133 25.0348 10.8876 27.1344 11.6362C28.4312 12.104 29.6662 12.7279 30.7469 13.57C32.4142 14.8801 33.4949 16.5332 33.8963 18.623C33.9889 19.2468 34.0506 19.9018 34.0198 20.8376Z" fill="black"/>
+                <path d="M19.0757 4.58698C19.0448 5.5539 18.9522 6.36487 18.52 7.14465C18.1803 7.76847 17.7172 8.23634 16.9761 8.3611C16.3278 8.45468 15.7411 8.26753 15.2162 7.89324C14.4752 7.36299 14.0429 6.6144 13.7342 5.77224C13.3636 4.71174 13.271 3.65124 13.4563 2.55955C13.5798 1.87335 13.8577 1.21833 14.3517 0.719275C15.2162 -0.185268 16.4204 -0.24765 17.3775 0.59451C18.1186 1.21833 18.5508 2.06049 18.8287 2.99623C18.8905 3.27695 18.9522 3.52648 18.9831 3.8072C19.0448 4.05673 19.0448 4.36864 19.0757 4.58698Z" fill="black"/>
+                <path d="M24.5408 4.77412C24.5099 5.74105 24.2938 6.48963 23.7689 7.08226C23.0896 7.83085 22.1016 7.86204 21.3606 7.17584C20.8357 6.67678 20.5578 6.05296 20.4343 5.33556C20.2799 4.55578 20.3416 3.776 20.6813 3.05861C20.99 2.43478 21.4223 1.93573 22.1325 1.77977C22.503 1.6862 22.8426 1.84215 23.1514 2.0293C23.8306 2.46598 24.2012 3.12099 24.4173 3.90077C24.479 4.21268 24.5099 4.55578 24.5408 4.77412Z" fill="black"/>
+                <path d="M28.6782 5.92819C28.6473 6.58321 28.5238 7.17584 28.1533 7.70609C28.0298 7.89324 27.8754 8.04919 27.6901 8.17396C27.227 8.48587 26.7021 8.39229 26.2698 7.98681C25.9302 7.64371 25.7449 7.20703 25.6214 6.73916C25.4671 5.92819 25.4979 5.14842 25.8684 4.39983C25.992 4.1503 26.1463 3.93196 26.3625 3.77601C26.7947 3.4329 27.3196 3.4329 27.7828 3.74482C28.215 4.05673 28.4312 4.52459 28.5238 5.02365C28.6164 5.30437 28.6473 5.61628 28.6782 5.92819Z" fill="black"/>
+                <path d="M29.2648 8.23634C29.2648 7.36299 29.5427 6.67678 30.222 6.20892C30.3455 6.11534 30.4999 6.05296 30.6543 5.99058C30.9321 5.86581 31.21 5.92819 31.457 6.11534C31.8275 6.42725 32.0437 6.80155 32.0128 7.30061C32.0128 8.018 31.8275 8.70421 31.2718 9.26565C31.0556 9.48399 30.8086 9.63994 30.5307 9.73351C30.1911 9.85828 29.9132 9.76471 29.6971 9.51518C29.4501 9.26565 29.3266 8.92254 29.2957 8.57944C29.2957 8.42349 29.2648 8.29872 29.2648 8.23634Z" fill="black"/>
+                <path d="M34.1124 10.8876C34.1124 11.3866 33.9889 11.8233 33.6184 12.1976C33.2787 12.5407 32.8773 12.5407 32.5068 12.1976C32.4142 12.104 32.3524 12.0105 32.2907 11.9169C31.8893 11.2619 31.9202 10.2638 32.4142 9.67114C32.7847 9.20327 33.3096 9.20327 33.6801 9.67114C33.7419 9.73352 33.7727 9.7959 33.8036 9.85828C34.0197 10.1702 34.1124 10.5133 34.1124 10.8876Z" fill="black"/>
+                <g clip-path="url(#clip0_270_223)">
+                <path d="M10.4234 28.8507C10.4713 28.7934 10.4982 28.7146 10.4979 28.6323L10.4979 27.0301C10.4979 26.9051 10.5803 26.8038 10.6818 26.8038L14.7536 26.8038C14.8897 26.8038 15 26.668 15 26.5005L15 23.382C15 23.2145 14.8897 23.0788 14.7536 23.0788L10.6818 23.0788C10.5803 23.0788 10.4979 22.9775 10.4979 22.8525L10.4979 21.2457C10.5005 21.0783 10.3923 20.9399 10.2562 20.9368C10.1881 20.9352 10.1225 20.9684 10.0749 21.0285L7.07357 24.7218C7.02719 24.7779 7.00074 24.8544 7 24.9345C6.99976 25.0162 7.02628 25.0945 7.07357 25.1517L10.0749 28.8451C10.1699 28.965 10.3259 28.9676 10.4234 28.8507Z" fill="black"/>
+                </g>
+                <path d="M41.6978 21.086C41.6499 21.1434 41.623 21.2222 41.6233 21.3044L41.6233 22.9067C41.6233 23.0316 41.5409 23.133 41.4394 23.133L37.3676 23.133C37.2315 23.133 37.1212 23.2687 37.1212 23.4362L37.1212 26.5547C37.1212 26.7222 37.2315 26.8579 37.3676 26.8579L41.4394 26.8579C41.5409 26.8579 41.6233 26.9593 41.6233 27.0843L41.6233 28.691C41.6207 28.8585 41.7289 28.9968 41.865 28.9999C41.9331 29.0015 41.9987 28.9683 42.0463 28.9083L45.0476 25.215C45.094 25.1588 45.1205 25.0823 45.1212 25.0022C45.1215 24.9206 45.0949 24.8423 45.0476 24.785L42.0463 21.0917C41.9513 20.9717 41.7953 20.9692 41.6978 21.086Z" fill="black"/>
+                <defs>
+                <clipPath id="clip0_270_223">
+                <rect width="10" height="10" fill="white" transform="translate(15 20) rotate(90)"/>
+                </clipPath>
+                </defs>
+              </svg>
+              <p>{{ block.settings.sz_adv_option2_name | default: 'Breite Füße' }}</p>
+            </div>
+          </div>
+          <div class="coustom-row size_recommend">
+            {%- if block.settings.sz_adv_option1_result_text != blank -%}
+              <div class="size_smaller row-element">
+                <p>{{ block.settings.sz_adv_option1_result_title | default: 'Wir empfehlen die' }}</p>
+                <p class="subtitle">{{ block.settings.sz_adv_option1_result_text }}</p>
+              </div>
+            {%- endif -%}
+            {%- if block.settings.sz_adv_option2_result_text != blank -%}
+              <div class="usual_size row-element">
+                <p>{{ block.settings.sz_adv_option2_result_title | default: 'Wir empfehlen die' }}</p>
+                <p class="subtitle">{{ block.settings.sz_adv_option2_result_text }}</p>
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+        <div class="bottom-indicator-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 20 14" fill="none">
+            <path d="M17.4852 5L10 12.7789L2.51476 5L17.4852 5Z" fill="white" stroke="#E0E0E0"/>
+            <path d="M10 12L1.33975 3L18.6603 3L10 12Z" fill="white"/>
+          </svg>
+        </div>
+        <div class="mobile_cross d_none">
+          <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 24C0 10.7452 10.7452 0 24 0C37.2548 0 48 10.7452 48 24C48 37.2548 37.2548 48 24 48C10.7452 48 0 37.2548 0 24Z" fill="white"/>
+            <path d="M29.658 18.343L18.344 29.657L29.658 18.343ZM29.658 29.657L18.344 18.343L29.658 29.657Z" fill="black"/>
+            <path d="M29.658 18.343L18.344 29.657M29.658 29.657L18.344 18.343" stroke="black" stroke-width="2"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  #size_advisor_content {
+    --bg-color: {{ block.settings.sz_adv_snippet_bg_color | default: '#EFF1FC' }};
+    --text-color: {{ block.settings.sz_adv_snippet_txt_color | default: '#65628F' }};
+    --btn-bg-color: rgba({{ block.settings.sz_adv_snippet_txt_color.rgb | default: '101 98 143' }} / 0.15);
+    --option-1-text-color: {{ block.settings.sz_adv_popup_option_1_txt_clr | default: '#000000' }};
+    --option-1-bg-color: {{ block.settings.sz_adv_popup_option_1_bg_clr | default: '#F2FAF7' }};
+    --option-1-border-color: {{ block.settings.sz_adv_popup_option_1_bord_clr | default: '#95D5BB' }};
+    --option-2-text-color: {{ block.settings.sz_adv_popup_option_2_txt_clr | default: '#000000' }};
+    --option-2-bg-color: {{ block.settings.sz_adv_popup_option_2_bg_clr | default: '#F9F9F9' }};
+    --option-2-border-color: {{ block.settings.sz_adv_popup_option_2_bord_clr | default: '#F9F9F9' }};
+  }
+  {% unless productName == 'original' %}
+    #size_advisor_content .coustom-row div.row-element.size_smaller{
+      order: 2;
+      margin-right: 0;
+    }
+    #size_advisor_content .coustom-row div.row-element.usual_size{
+      margin-right: 8px;
+    }
+   @media only screen and (max-width: 999px){
+      #size_advisor_content .coustom-row div.row-element.usual_size{
+      margin-right: 14px;
+    }
+   }
+  {% endunless %}
+  #size_advisor_content .size_recommend div.row-element .subtitle{
+    font-weight: 600;
+  }
+    #size_advisor_content .product-info__variant-picker .product-size-recommendation{
+  	display: none;
+  }
+  #size_advisor_content .size_advisor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+  	background: var(--bg-color);
+  	padding: 8px 8px 8px 12px;
+  }
+  #size_advisor_content .size_advisor p{
+  	color: var(--text-color);
+  	font-family: Poppins;
+  	font-size: 13px;
+  	font-style: normal;
+  	font-weight: 500;
+  	line-height: 20px;
+  }
+  #size_advisor_content .size_advisor p>span{
+  	border-radius: 5px;
+  	background: var(--btn-bg-color);
+  	padding: 2px 8px;
+  }
+  #size_advisor_content .d_none{
+  	display: none;
+  }
+  #size_advisor_content .pop_up_wrap{
+  	position: relative;
+  	border-radius: 8px;
+  	border: 1px solid #E0E0E0;
+  	background: #FFF;
+  	padding: 24px 32px;
+  }
+  #size_advisor_content .coustom-row{
+  	display: flex;
+  	margin-bottom: 8px;
+  }
+  #size_advisor_content .coustom-row:last-child{
+  	margin-bottom: 0;
+  }
+  #size_advisor_content .coustom-row .row-element {
+  	width: 50%;
+  	margin-right: 8px;
+  	border-radius: 10px;
+  	color: var(--option-2-text-color);
+  	background-color: var(--option-2-bg-color);
+  	border: 1px solid var(--option-2-border-color);
+  	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #size_advisor_content .size_recommend .size_smaller{
+  	border-radius: 10px;
+    color: var(--option-1-text-color);
+  	background-color: var(--option-1-bg-color);
+  	border: 1px solid var(--option-1-border-color);
+  }
+  {% comment %} #size_advisor_content .size_recommend .usual_size{
+  	border-radius: 10px;
+  	border: 1px solid rgba(9, 158, 98, 0.40);
+  	background: rgba(9, 158, 98, 0.05);
+  } {% endcomment %}
+  #size_advisor_content .size_recommend_product .row-element{
+  	border: 1px solid rgba(0, 0, 0, 0.12);
+  }
+  #size_advisor_content .coustom-row .row-element:last-child{
+  	margin-right: 0;
+  }
+  #size_advisor_content .row-element p{
+  	color: #000;
+  	font-size: 13px;
+  	font-weight: 500;
+  	line-height: 22.4px;
+  	text-align: center;
+  }
+  #size_advisor_content .size_recommend .row-element p:nth-child(1){
+  	font-weight: 400;
+  }
+  #size_advisor_content .row-element p:nth-child(2){
+  	padding-top: 8px;
+  }
+
+  #size_advisor_content .pop_up_wrap {
+      padding: 24px 32px;
+      padding: 4% 6.7%;
+  }
+  #size_advisor_content .size_recommend_product .row-element{
+  	 padding: 3.9% 3.8%;
+  }
+  #size_advisor_content .size_recommend .row-element {
+      padding: 2%;
+  }
+  #size_advisor_content .pop-up-title{
+  	color: #000;
+  	font-size: 22px;
+  	font-weight: 700;
+  	line-height: 33.6px;
+  	letter-spacing: 0.48px;
+  }
+  #size_advisor_content .size_recommendation_wrap{
+  	padding-top: 24px;
+  }
+  #size_advisor_content .cross_icon {
+      position: absolute;
+      right: 16px;
+      top: 16px;
+      cursor: pointer;
+  }
+  #size_advisor_content{
+  	position: relative;
+  }
+  #size_advisor_content .size_advisor_btn{
+  	cursor: pointer;
+  }
+  #size_advisor_content .pop_up_container{
+      position: absolute;
+      bottom: 50px;
+      right: 2px;
+      width: 100%;
+      z-index: 1005;
+  }
+  #size_advisor_content .bottom-indicator-icon{
+      position: absolute;
+      right: 55px;
+      bottom: -18px;
+  }
+
+  @media only screen and (min-width: 1000px)  {
+  	#size_advisor_content .mobile_cross{
+  		display: none;
+  	}
+  	#size_advisor_content .pop_up_wrap hr{
+  		display: none;
+  	}
+
+  }
+
+  @media only screen and (max-width: 1300px) and (min-width: 1000px)  {
+  	#size_advisor_content .row-element p {
+      	color: #000;
+      	font-size: 11px;
+  	}
+  	#size_advisor_content .cross_icon {
+  	    right: 10px;
+  	    top: 10px;
+  	}
+  	#size_advisor_content .pop-up-title {
+      	font-size: 16px;
+      	line-height: 28px;
+  	}
+  	#size_advisor_content .size_advisor p {
+      	font-size: 11px;
+  	}
+  }
+
+  @media only screen and (max-width: 999px) {
+    #size_advisor_content .size_advisor p>span{
+      padding: 2px 6px;
+    }
+  	#size_advisor_content .cross_icon{
+  		display: none;
+  	}
+  	#size_advisor_content .mobile_cross{
+  		position: absolute;
+  		top: -75px;
+      	left: 44%;
+          cursor: pointer;
+  	}
+  	#size_advisor_content .pop-up-title{
+  		text-align: center;
+  		font-size: 16px;
+  		line-height: 25.2px;
+  	}
+  	#size_advisor_content .row-element p{
+  		font-size: 12px;
+  		line-height: 22.4px;
+  	}
+  	#size_advisor_content .coustom-row .row-element {
+      	margin-right: 14px;
+  	}
+  	#size_advisor_content .coustom-row {
+      	margin-bottom: 14px;
+  	}
+  	#size_advisor_content .pop_up_wrap hr{
+  		position: absolute;
+  	    top: 60px;
+  	    right: 0;
+  	    height: 1px;
+  	    width: 100%;
+  	    background: rgba(0, 0, 0, 0.12);
+  	}
+  	#size_advisor_content .size_recommend_product .row-element {
+  	    padding: 2.7% 3.2%;
+  	}
+  	#size_advisor_content .pop_up_wrap {
+      	padding: 20px 16px 16px;
+  	}
+  	#size_advisor_content .size_recommendation_wrap {
+  	    padding-top: 35px;
+  	}
+  	.overflow_hidden{
+  		overflow: hidden !important;
+  	}
+  	.bottom-indicator-icon{
+  		display: none;
+  	}
+  	#size_advisor_content .pop_up_container {
+  		display: flex;
+  		align-items: center;
+  		justify-content: center;
+  		top: 0;
+  		position: absolute;
+  		width: 100%;
+  		z-index: 1005;
+  		bottom: 0;
+      	right: 0;
+  	}
+  	.pop_up_wrap{
+  		width: 100%;
+  		margin: 0 10px;
+  	}
+  	#size_advisor_content .bg_overlay {
+  		position: fixed;
+  		width: 100vw;
+  		height: 100vh;
+  		background-color: rgba(0,0,0,0.5);
+  		top: 0;
+  		left: 0;
+  		z-index: 999;
+  	}
+  }
+
+  @media only screen and (max-width: 999px) and (min-width: 700px)  {
+  	#size_advisor_content .mobile_cross{
+      	left: 47%;
+  	}
+  }
+  @media only screen and (max-width: 370px){
+  	#size_advisor_content .pop-up-title {
+  		font-size: 14px;
+  	}
+  	#size_advisor_content .mobile_cross {
+      	left: 43%;
+  	}
+    #size_advisor_content .size_advisor p{
+      font-size: 12px;
+    }
+  }
+</style>
+
+<script>
+    const contentNone = () => {
+  	if(!document.querySelector(".pop_up_container").classList.contains("d_none")){
+  		document.querySelector(".pop_up_container").classList.add("d_none");
+  	}
+  }
+  document.querySelector(".size_advisor .size_advisor_btn").addEventListener("click",()=>{
+  	if(document.querySelector(".pop_up_container").classList.contains("d_none")){
+  		document.querySelector(".pop_up_container").classList.remove("d_none");
+  	}
+  	else{
+  		document.querySelector(".pop_up_container").classList.add("d_none");
+  	}
+  })
+
+  document.querySelector(".pop_up_wrap .cross_icon").addEventListener("click",()=>{
+  	contentNone();
+  })
+
+  document.querySelector(".size_advisor .size_advisor_btn").addEventListener("click",()=>{
+  	if(document.querySelector(".mobile_cross").classList.contains("d_none")){
+  		document.querySelector(".mobile_cross").classList.remove("d_none");
+  	}
+  	if(document.querySelector(".bg_overlay").classList.contains("d_none")){
+  		document.querySelector(".bg_overlay").classList.remove("d_none");
+  		document.querySelector("html").classList.add("overflow_hidden");
+  	}
+  })
+  document.querySelector(".mobile_cross").addEventListener("click",()=>{
+  	contentNone();
+  	document.querySelector(".bg_overlay").classList.add("d_none");
+  	document.querySelector("html").classList.remove("overflow_hidden");
+  })
+</script>

@@ -1,0 +1,146 @@
+<!-- VARIANT B -->
+{% if template contains 'variant-b' %}
+  <script>
+    (function() {
+      if (window.innerWidth <= 999) {
+
+        // Get the elements
+        let productGallery = document.querySelector('.product .product-gallery');
+        let productTitle = document.querySelector('.product .product-info__title-wrap');
+        let productText = document.querySelector('.product .product-info__text');
+        let productPriceWrap = document.querySelector('.product .product-info__price');
+        let productPrice = document.querySelector('.product .price-list');
+        let productSeparator = document.querySelector('.product .product-info__separator');
+        let productFreeShippingText = document.querySelector('.product .product-info__price p.text-sm');
+        
+        
+        // Check if all elements exist
+        if (productGallery && productTitle && productText && productPriceWrap && productSeparator) {
+          // Move productTitle above gallery
+          productGallery.parentNode.insertBefore(productTitle, productGallery);
+        
+          // Move productText above productTitle
+          productTitle.parentNode.insertBefore(productText, productTitle);
+        
+          // Move productSeparator above productText
+          productText.parentNode.insertBefore(productSeparator, productText);
+        
+          // Move productPriceWrap after productTitle
+          productTitle.parentNode.insertBefore(productPriceWrap, productTitle.nextSibling);
+        
+          // Append productPrice to productTitle
+          productTitle.appendChild(productPrice);
+
+          // Update text
+          productFreeShippingText.textContent = 'Kostenloser Versand';
+
+          // Clone productPrice
+          let clonedPrice = productPrice.cloneNode(true);
+        
+          // Add clonedPrice after addToCartButton
+          //addToCartButton.appendChild(clonedPrice);
+          setTimeout(function() {
+            let addToCartButton = document.querySelector('.product .buy-buttons .button[type="submit"] div');
+            addToCartButton.parentNode.insertBefore(clonedPrice, addToCartButton.nextSibling);
+          }, 1000)
+          
+        }
+        
+      }        
+    })();
+  </script>     
+
+  <style>
+    @media (max-width: 999px) {        
+      .product .product-info__text {
+        margin-top: -8px;
+        margin-bottom: -12px;
+      }
+
+      .product .product-info__badge-list {
+        display: none;
+      }
+
+      .product .product-info__title-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+
+      .product .product-info__title-wrap .product-info__title {
+        font-size: 19px;
+      }
+      
+      .product .product-info__title-wrap .price-list {
+        flex-wrap: nowrap;
+      }      
+
+      .product .product-info__price {
+        display: flex;
+        margin-bottom: -15px;
+      }
+      
+      .product .product-info__price > * {
+        flex: 1;
+      }
+
+      .product .product-info__price p.text-sm {
+        text-align: right;
+        font-weight: 500;
+        color: #333;
+        margin-top: 4px;
+      }         
+
+      .product .product-info__buy-buttons .buy-buttons .button {
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        gap: 12px;
+        font-size: 16px !important;
+        justify-content: center;
+      }     
+
+      .product .product-info__buy-buttons .price-list sale-price, 
+      .product .product-info__buy-buttons .price-list compare-at-price {
+        color: white;
+      }
+
+      .product .RatingBarWidget {
+        font-size: 12px;
+      }      
+      
+    }
+  </style>
+{% endif %}
+
+
+<!-- VARIANT C -->
+{% if template contains 'variant-c' %}
+  <script>
+    (function() {
+      if (window.innerWidth <= 999) {
+        // Get the elements
+        let variantPicker = document.querySelector('.product-info .product-info__variant-picker');
+        let title = document.querySelector('.product-info .product-info__title');
+      
+        // Check if both elements exist
+        if (variantPicker && title) {
+          // Get the parent element of the title
+          let parentElement = title.parentNode;
+      
+          // Move the variant picker before the title
+          parentElement.insertBefore(variantPicker, title);
+        }
+      }        
+    })();
+  </script>
+
+  <style>
+    @media (max-width: 999px) {
+      .product-info__variant-picker {
+        margin-bottom: 1.5rem;
+      }
+    }
+  </style>      
+{% endif %} 

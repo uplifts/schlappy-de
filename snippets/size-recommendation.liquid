@@ -1,0 +1,54 @@
+<style>
+  .variant-picker.is-color-sel-disabled .size-picker .variant-picker__option-values:after {
+    content: '{{ 'product.general.choose_fit_please' | t }}';
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const variantPicker = document.querySelector('.variantPicker');
+    const selectedSizeValue = document.querySelector('.selectedSizeValue');
+    const atcBtn = document.querySelector('.addToCartBtn');
+    {% if selected_variant == nil and disable_preselected_size %}
+      window.colorSelDisabled = true;
+      if (variantPicker) variantPicker.classList.add('is-color-sel-disabled');
+      if (selectedSizeValue) selectedSizeValue.innerHTML = window.themeVariables.strings.chooseFitFirstShort;
+      if (atcBtn) atcBtn.firstElementChild.innerHTML = window.themeVariables.strings.chooseFitSizeFirst;
+    {% else %}
+      window.colorSelDisabled = false;
+      variantPicker && variantPicker.classList.remove('is-color-sel-disabled');
+    {% endif %}
+    const normalFootButton = document.getElementById('normal-foot');
+    const wideFootButton = document.getElementById('wide-foot');
+    const recommendationMessage = document.getElementById('recommendation-message');
+    const recommendationMessageText = document.getElementById('recommendation-message-text');
+
+    function clearButtonSelection() {
+      normalFootButton.classList.remove('selected');
+      wideFootButton.classList.remove('selected');
+      document.documentElement.classList.remove('disable-size-selector');
+    }
+
+    normalFootButton.addEventListener('click', function() {
+      clearButtonSelection();
+      normalFootButton.classList.add('selected');
+      recommendationMessage.style.display = 'block';
+      recommendationMessageText.textContent = window.themeVariables.strings.sizeRecommendSmaller;
+      window.colorSelDisabled = false;
+      variantPicker && variantPicker.classList.remove('is-color-sel-disabled');
+      if (atcBtn) atcBtn.firstElementChild.innerHTML = window.themeVariables.strings.chooseModelFirst;
+      if (selectedSizeValue) selectedSizeValue.innerHTML = window.themeVariables.strings.pleaseChoose;
+    });
+
+    wideFootButton.addEventListener('click', function() {
+      clearButtonSelection();
+      wideFootButton.classList.add('selected');
+      recommendationMessage.style.display = 'block';
+      recommendationMessageText.textContent = window.themeVariables.strings.sizeRecommendUsual;
+      window.colorSelDisabled = false;
+      variantPicker && variantPicker.classList.remove('is-color-sel-disabled');
+      if (atcBtn) atcBtn.firstElementChild.innerHTML = window.themeVariables.strings.chooseModelFirst;
+      if (selectedSizeValue) selectedSizeValue.innerHTML = window.themeVariables.strings.pleaseChoose;
+    });
+  });
+</script>

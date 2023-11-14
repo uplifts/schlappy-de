@@ -1,0 +1,602 @@
+{
+  "sections": {
+    "29d5d7d3-d42f-4fdc-921c-f9865c8a16b1": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--17896945582344__29d5d7d3-d42f-4fdc-921c-f9865c8a16b1-16788911002c50ad8f-2": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Bequem durch deinen Tag mit den Original Schlappy's<\/p>"
+          }
+        },
+        "805fc0b3-5a08-444e-af6a-27e9542773e9": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Bequem durch den Tag mit Schlappy"
+          }
+        },
+        "80eca672-2eda-462a-b527-e88f89c1ed64": {
+          "type": "heading",
+          "settings": {
+            "text": "Laufen wie auf Wolken",
+            "heading_tag": "h2"
+          }
+        },
+        "7cfe9a3a-3090-4326-9442-9f44010e3a44": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Damen",
+            "url": "shopify:\/\/collections",
+            "background": "rgba(0,0,0,0)",
+            "text_color": "#000000"
+          }
+        },
+        "83333c1a-b6ea-45d2-b89c-040259af83c9": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "style": "fill",
+            "size": "lg",
+            "text": "Herren",
+            "url": "shopify:\/\/collections",
+            "background": "rgba(0,0,0,0)",
+            "text_color": "#000000"
+          }
+        },
+        "e00525cc-387e-4967-b579-aad44358b762": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Jetzt einkaufen",
+            "url": "shopify:\/\/products\/original",
+            "background": "rgba(0,0,0,0)",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17896945582344__29d5d7d3-d42f-4fdc-921c-f9865c8a16b1-16788911002c50ad8f-2",
+        "805fc0b3-5a08-444e-af6a-27e9542773e9",
+        "80eca672-2eda-462a-b527-e88f89c1ed64",
+        "7cfe9a3a-3090-4326-9442-9f44010e3a44",
+        "83333c1a-b6ea-45d2-b89c-040259af83c9",
+        "e00525cc-387e-4967-b579-aad44358b762"
+      ],
+      "custom_css": [
+        "h1 {}"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": true,
+        "enable_parallax": false,
+        "image_size": "md",
+        "image": "shopify:\/\/shop_images\/Schlappy_Header_v2_2800x1000_high-res.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Mobile_Schlappy_01_FFM_00151_1080x1920_high-res_-_bearbeitet_-_bearbeitet.png",
+        "mobile_text_position": "place-self-end-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#000000",
+        "overlay_color": "#dcdcdc",
+        "overlay_opacity": 3
+      }
+    },
+    "bc233d5a-1ad4-44e4-bd90-8868c8e898be": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "ec8fd878-7a07-47f0-aca7-bc4143fc9d09": {
+          "type": "subheading",
+          "settings": {
+            "text": "Bequem durch den Tag mit Schlappys"
+          }
+        },
+        "5a131e03-5e88-438d-81e8-4497a996f3aa": {
+          "type": "heading",
+          "settings": {
+            "text": "Gehen wie auf Wolken",
+            "heading_tag": "h1"
+          }
+        },
+        "ec559dfd-f582-476f-9094-540091e09538": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Jetzt einkaufen",
+            "url": "",
+            "background": "rgba(0,0,0,0)",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "ec8fd878-7a07-47f0-aca7-bc4143fc9d09",
+        "5a131e03-5e88-438d-81e8-4497a996f3aa",
+        "ec559dfd-f582-476f-9094-540091e09538"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": true,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify:\/\/shop_images\/Schlappy_Banner-uplifts-3.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Schlappy_Banner-uplifts-mobile-6.jpg",
+        "mobile_text_position": "place-self-end-start text-start",
+        "desktop_text_position": "sm:place-self-end-center sm:text-center",
+        "text_color": "#1a1a1a",
+        "overlay_color": "#ffffff",
+        "overlay_opacity": 10
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".reviews-io-rating-bar-widget {display: none;}"
+      ],
+      "settings": {
+        "collection": "alle-produkte",
+        "products": [],
+        "full_width": false,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 3,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Entdecke unsere Bestseller",
+        "content": "",
+        "link_url": "",
+        "link_text": "Alle ansehen",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "rgba(0,0,0,0)",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "#f9f9f9",
+        "product_card_text_color": ""
+      }
+    },
+    "f396c896-0c09-4e14-82ef-e4f3fb06c6ea": {
+      "type": "media-with-text",
+      "blocks": {
+        "008272b5-1c15-484b-9176-14464cd591c5": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Original_08.jpg",
+            "media_width": 55,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "Entlastung beim Gehen & Stehen",
+            "title": "Gönn' deinen Füßen mal eine Pause.",
+            "content": "",
+            "link_text": "Schlappys entdecken",
+            "link_url": "shopify:\/\/collections\/alle-produkte",
+            "background": "#3fa3fe",
+            "background_gradient": "linear-gradient(224deg, rgba(209, 220, 247, 1), rgba(63, 163, 254, 1) 100%)",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#ffffff",
+            "button_text_color": "#1376da"
+          }
+        },
+        "template--17896945582344__f396c896-0c09-4e14-82ef-e4f3fb06c6ea-167895351137ec57ec-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Original_beige_09.jpg",
+            "media_width": 55,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "Den ganzen Tag komfortabel",
+            "title": "Wie auf Wolke 7 gehen - mit der extra dicken original Schlappy Sohle.",
+            "content": "",
+            "link_text": "Schlappys entdecken",
+            "link_url": "shopify:\/\/collections\/alle-produkte",
+            "background": "#ff9877",
+            "background_gradient": "linear-gradient(306deg, rgba(255, 117, 40, 1), rgba(255, 186, 163, 1) 100%)",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#ffffff",
+            "button_text_color": "#fd7428"
+          }
+        },
+        "b0ca178a-0b39-452c-a72a-ea14c7af74e3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Original_11.jpg",
+            "media_width": 55,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "Entdecke das original Schlappy EVA-Material",
+            "title": "Atmungsaktiv, komfortabel und besonders flexibel.",
+            "content": "",
+            "link_text": "Schlappys entdecken",
+            "link_url": "shopify:\/\/collections\/alle-produkte",
+            "background": "#3fa3fe",
+            "background_gradient": "linear-gradient(143deg, rgba(255, 223, 73, 1), rgba(231, 186, 0, 1) 100%)",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#ffffff",
+            "button_text_color": "#d4af00"
+          }
+        },
+        "6e63a91b-1746-41dc-9586-a8a6ce66da3f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Belt_12.jpg",
+            "media_width": 55,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "Bequem, ob Zuhause oder unterwegs",
+            "title": "Wasserfest und kinderleicht zu reinigen.",
+            "content": "",
+            "link_text": "Schlappys entdecken",
+            "link_url": "shopify:\/\/collections\/alle-produkte",
+            "background": "#3fa3fe",
+            "background_gradient": "linear-gradient(40deg, rgba(226, 182, 184, 1) 1%, rgba(242, 216, 212, 1) 100%)",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#ffffff",
+            "button_text_color": "#d7a5a8"
+          }
+        }
+      },
+      "block_order": [
+        "008272b5-1c15-484b-9176-14464cd591c5",
+        "template--17896945582344__f396c896-0c09-4e14-82ef-e4f3fb06c6ea-167895351137ec57ec-0",
+        "b0ca178a-0b39-452c-a72a-ea14c7af74e3",
+        "6e63a91b-1746-41dc-9586-a8a6ce66da3f"
+      ],
+      "settings": {
+        "custom_class": "",
+        "full_width": false,
+        "enable_parallax": false,
+        "spacing": "small",
+        "swap_order_mobile": false
+      }
+    },
+    "b7000665-c650-4198-bd05-1c13a1191d3d": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17896945582344__b7000665-c650-4198-bd05-1c13a1191d3d-1679325410df84fd9a-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Original_blau_06_14b70a77-130c-4762-bd3b-b41b8a6bedd5.jpg",
+            "column_size": "3",
+            "title": "Gepolstertes Fußbett",
+            "heading_tag": "h4",
+            "content": "<p>Unterstützt die natürliche Wölbung deiner Füße<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "e3afb535-c2e2-4ab0-a88c-40a1d3076d97": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Fur_11.jpg",
+            "column_size": "3",
+            "title": "Ganztägiger Komfort",
+            "heading_tag": "h4",
+            "content": "<p>Atmungsaktives, ultra biegbares Material<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17896945582344__b7000665-c650-4198-bd05-1c13a1191d3d-1679325410df84fd9a-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Belt_orange_10.jpg",
+            "column_size": "3",
+            "title": "Wasserfest und rutschfest",
+            "heading_tag": "h4",
+            "content": "<p>Für sicheren Stand, auch wenn es mal Nass wird<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "aa8c05f0-5091-4319-8f16-653f27b6955c": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Original_hellblau_01.jpg",
+            "column_size": "3",
+            "title": "100% Plastikfrei",
+            "heading_tag": "h4",
+            "content": "<p>Besteht aus EVA-Kompressionsmaterial<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "e05597e1-a9aa-425c-be1a-70e120a6d7c0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Fur_12_a5581f53-3223-4480-986f-3df8355f681e.jpg",
+            "column_size": "3",
+            "title": "Nutzbar in jedem Bereich",
+            "heading_tag": "h4",
+            "content": "<p>Bringt dich bequem durch den Alltag<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17896945582344__b7000665-c650-4198-bd05-1c13a1191d3d-1679325410df84fd9a-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Belt_08.jpg",
+            "column_size": "3",
+            "title": "Entlastet beim Gehen",
+            "heading_tag": "h4",
+            "content": "<p>Endlich keine Scheuerstellen oder Blasen mehr<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17896945582344__b7000665-c650-4198-bd05-1c13a1191d3d-1679325410df84fd9a-0",
+        "e3afb535-c2e2-4ab0-a88c-40a1d3076d97",
+        "template--17896945582344__b7000665-c650-4198-bd05-1c13a1191d3d-1679325410df84fd9a-1",
+        "aa8c05f0-5091-4319-8f16-653f27b6955c",
+        "e05597e1-a9aa-425c-be1a-70e120a6d7c0",
+        "template--17896945582344__b7000665-c650-4198-bd05-1c13a1191d3d-1679325410df84fd9a-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "Das Original",
+        "title": "Das gibt es nur bei Schlappy.",
+        "content": "",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1681230418fab06583": {
+      "type": "apps",
+      "blocks": {
+        "5960cbbf-5b1b-46b0-b782-557eee40150e": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-card-carousel\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "star": "#ffb74a",
+            "review_type": "company, product, third_party",
+            "reviews_shown": 20,
+            "header_bg_colour": "#ffffff",
+            "header_colour": "#1e1864",
+            "header_star_colour": "#ffb74a",
+            "heading_text_colour": "#0e1311",
+            "heading_font": "helvetica_n4",
+            "body_text_colour": "#0e1311",
+            "badge_icon_colour": "#05b76f",
+            "badge_text_colour": "#0e1311",
+            "bg_start_colour": "#ffffff",
+            "bg_end_colour": "#ffffff",
+            "item_border_width": "1px",
+            "item_border_colour": "#e4eaf9",
+            "item_border_radius": "12px",
+            "item_shadow_size": "0px",
+            "item_shadow_colour": "#000000",
+            "enable_rich_snippets": false,
+            "disable_same_customer": false,
+            "logo_colour": "var(--logo-normal)"
+          }
+        },
+        "9d56b75a-8ecb-412c-89bd-68e8b31171f6": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-text-banner\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "disabled": true,
+          "settings": {
+            "star": "#ffb74a",
+            "text_color": "#1e1864",
+            "css": "\/* Add Custom CSS Here... *\/"
+          }
+        }
+      },
+      "block_order": [
+        "5960cbbf-5b1b-46b0-b782-557eee40150e",
+        "9d56b75a-8ecb-412c-89bd-68e8b31171f6"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "linear-gradient(151deg, rgba(249, 251, 255, 1), rgba(228, 234, 249, 1) 100%)",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "74cbf732-3a93-4538-88c4-9b609423da99": {
+      "type": "testimonials",
+      "blocks": {
+        "template--17896945582344__74cbf732-3a93-4538-88c4-9b609423da99-1678954142158beaf4-0": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Tammy S.",
+            "title": "",
+            "content": "<p>Ich bin seit einiger Zeit Kunde bei Schlappy.de. Wenn ich Schlappy mit 10 bewerten könnte, würde ich es sofort machen. Der Kundenservice ist spitze und ich bin immer wieder von den neuen Produkten begeistert. Wo findet man sowas?! Macht weiter so! Ehrlichkeit ist heutzutage schwer zu finden. Ich kann's nur empfehlen.<\/p>"
+          }
+        },
+        "template--17896945582344__74cbf732-3a93-4538-88c4-9b609423da99-1678954142158beaf4-1": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Laura K.",
+            "title": "",
+            "content": "<p>\"Oh Wow\" habe ich gedacht, als ich meine Bestellung am Freitag erhalten habe. Das war ein toller Start ins Wochenende… Sehr bequem, perfekte Größen und ich bin überrascht von der guten Qualität. Am Anfang war ich etwas skeptisch, aber letztendlich bin sehr zufrieden. SCHLAPPY.DE kann ich wirklich nur empfehlen. Vielen Dank!<\/p>"
+          }
+        },
+        "template--17896945582344__74cbf732-3a93-4538-88c4-9b609423da99-1678954142158beaf4-2": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Lisa M.",
+            "title": "",
+            "content": "<p>Ich liebe die Produkte von SCHLAPPY!! Ich hab bereits dreimal bestellt und den Shop auch an einige Freunde weiterempfohlen. Das gehört für mich dazu, wenn man zufrieden ist. Die Produkte sind besonders und nicht bei anderen Shops zu finden. Das hätte ich nicht gedacht! Aber es ist wirklich so. Daumen hoch und 100% Empfehlung! <\/p>"
+          }
+        },
+        "b9571d04-48fb-489f-8091-4daf41e1dfcd": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Susi S.",
+            "title": "",
+            "content": "<p>Ich bin mit den Schlappys 4 Tage gewandert mit einem 15 Kilo Rucksack bei 30 Grad und 2 mal Regen und habe keine einzige Blase am Fuß. Sie sind echt super bequem, hatte noch so ein weiches Fußbett. Würde sie sofort wieder kaufen!<\/p>"
+          }
+        },
+        "840ba85e-a200-433e-8a0f-dd5d7957b025": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Michaela H.",
+            "title": "",
+            "content": "<p>Ich hatte jahrelang Fersenspornschmerzen, nix half auf längere Zeit. Dann sah ich zufällig einen Werbespot von Schlappy -das erste Paar war bestellt - skeptisch natürlich, warum sollten diese Schuhe anders als andere sein.. ABER seit ich Schlappy trage, habe ich keine Schmerzen mehr. Sie haben echt das gehalten, was sie versprechen.Ich bin immer noch begeistert und hab jetzt 2 Paar hier. Absolute Empfehlung!<\/p>"
+          }
+        },
+        "373438cb-d705-4029-8a28-03ca4557e438": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Marc W.",
+            "title": "",
+            "content": "<p>Habe die Schlappys jetzt bereits zum 5. Mal gekauft um sie u.a. auch zu verschenken. Die Qualität ist auch nach einiger Zeit tragen immer noch tiptop. Die Lieferung erfolgte schnell, ordentlich und zuverlässig. Gerne auch in Zukunft wieder. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17896945582344__74cbf732-3a93-4538-88c4-9b609423da99-1678954142158beaf4-0",
+        "template--17896945582344__74cbf732-3a93-4538-88c4-9b609423da99-1678954142158beaf4-1",
+        "template--17896945582344__74cbf732-3a93-4538-88c4-9b609423da99-1678954142158beaf4-2",
+        "b9571d04-48fb-489f-8091-4daf41e1dfcd",
+        "840ba85e-a200-433e-8a0f-dd5d7957b025",
+        "373438cb-d705-4029-8a28-03ca4557e438"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "stack_testimonials": false,
+        "subheading": "",
+        "title": "Das sagen unsere Kunden",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "#f9ca4f",
+        "background_gradient": "linear-gradient(141deg, rgba(250, 249, 255, 1) 14%, rgba(217, 226, 247, 1) 84%)",
+        "text_color": "",
+        "heading_color": "#3a3481",
+        "heading_gradient": "",
+        "testimonial_card_background": "#ffffff",
+        "testimonial_card_text_color": "#242d4d"
+      }
+    },
+    "4a8d9a6d-febc-496d-bc5c-1ede7f60c776": {
+      "type": "featured-collection",
+      "custom_css": [
+        ".reviews-io-rating-bar-widget {display: none;}"
+      ],
+      "settings": {
+        "collection": "alle-produkte",
+        "products": [],
+        "full_width": false,
+        "stack_products": false,
+        "show_progress_bar": false,
+        "products_count": 5,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Entdecke die Schlappys",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "#f9f9f9",
+        "product_card_text_color": ""
+      }
+    },
+    "16789543297cd2ba37": {
+      "type": "apps",
+      "blocks": {
+        "ff526909-cd3c-47aa-8ad6-1d3b09bf24d9": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        },
+        "4b5b85af-2db0-44d8-9784-c8ac1c26761b": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": ""
+          }
+        }
+      },
+      "block_order": [
+        "ff526909-cd3c-47aa-8ad6-1d3b09bf24d9",
+        "4b5b85af-2db0-44d8-9784-c8ac1c26761b"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "29d5d7d3-d42f-4fdc-921c-f9865c8a16b1",
+    "bc233d5a-1ad4-44e4-bd90-8868c8e898be",
+    "featured-collection",
+    "f396c896-0c09-4e14-82ef-e4f3fb06c6ea",
+    "b7000665-c650-4198-bd05-1c13a1191d3d",
+    "1681230418fab06583",
+    "74cbf732-3a93-4538-88c4-9b609423da99",
+    "4a8d9a6d-febc-496d-bc5c-1ede7f60c776",
+    "16789543297cd2ba37"
+  ]
+}

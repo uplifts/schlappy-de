@@ -1,0 +1,91 @@
+<div class="checkout-supportbox">
+  <div class="checkout-supportbox--top d-flex-wrap">
+    {%- if section.settings.title != blank -%}
+      <div class="checkout-supportbox--top-title flex-1">
+        <h3 class="heading-2">{{ section.settings.title }}</h3>
+      </div>
+      <div class="checkout-supportbox--top-status flex-item-auto">
+        {{ 'checkout.miscellaneous.online' | t }}
+      </div>
+    {%- endif -%}
+  </div>
+  {%- if section.settings.message != blank -%}
+    <div class="checkout-supportbox--middle">
+      <div class="checkout-supportbox--text">
+        {{ section.settings.message }}
+      </div>
+    </div>
+  {%- endif -%}
+  <div class="checkout-supportbox--footer d-flex-wrap">
+    {%- if section.settings.photo != blank or section.settings.agent_name != blank -%}
+      <div class="checkout-supportbox--footer-person">
+        <div class="flex-align-center">
+          {%- if section.settings.photo != blank -%}
+            <div class="checkout-supportbox--footer-person-photo">
+              <img class="mw-100" src="{{ section.settings.photo | img_url: 'master' }}" alt="{{ section.settings.photo.alt }}">
+            </div>
+          {%- endif -%}
+          <div class="checkout-supportbox--footer-content flex-1">
+            <div class="checkout-supportbox--footer-person flex-1">
+              {%- if section.settings.agent_name != blank -%}
+                <h2 class="heading-3">
+                  {{ section.settings.agent_name }}
+                </h2>
+              {%- endif -%}
+              {%- if section.settings.agent_position != blank -%}
+                <div>
+                  {{ section.settings.agent_position }}
+                </div>
+              {%- endif -%}
+            </div>
+            {%- if section.settings.contact_info != blank -%}
+              <div class="checkout-supportbox--footer-contacts flex-item-auto">
+                {{ section.settings.contact_info }}
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Checkout support box",
+  "class": "checkout-support-box checkoutSupportBox",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "message",
+      "label": "Message"
+    },
+    {
+      "type": "image_picker",
+      "id": "photo",
+      "label": "Photo"
+    },
+    {
+      "type": "text",
+      "id": "agent_name",
+      "label": "Agent name"
+    },
+    {
+      "type": "text",
+      "id": "agent_position",
+      "label": "Agent position"
+    },
+    {
+      "type": "textarea",
+      "id": "contact_info",
+      "label": "Contact info"
+    }
+  ]
+}
+{% endschema %}

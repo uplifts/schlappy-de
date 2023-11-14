@@ -1,0 +1,1139 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "c33350c5-55e7-453b-8de9-66db7628463b": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_17.03.2023_um_14.00.15_PM.png",
+            "alignment": "start",
+            "max_width": 500
+          }
+        },
+        "89859e46-41f8-4001-bed9-10f8cdc36b5b": {
+          "type": "offer",
+          "disabled": true,
+          "settings": {
+            "css_class": "",
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-coupon",
+            "custom_icon": "shopify:\/\/shop_images\/claudie-schlappy.png",
+            "icon_width": 32,
+            "title": "Mehr als 28.000 mal in den letzten 2 Monaten gekauft",
+            "content": "",
+            "background": "#fafafa",
+            "text_color": "#666666"
+          }
+        },
+        "455c8124-7d11-498f-b667-fe8c7787e922": {
+          "type": "offer",
+          "disabled": true,
+          "settings": {
+            "css_class": "",
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-coupon",
+            "custom_icon": "shopify:\/\/shop_images\/claudie-schlappy.png",
+            "icon_width": 32,
+            "title": "Claudie & 24.907 andere Kunden lieben ihre Schlappy Hausschuhe",
+            "content": "",
+            "background": "#ffffff",
+            "text_color": "#666666"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "a2e10289-b2c1-4c6d-b753-4c7462497021": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Gehe wie auf Wolken durch deinen Alltag <\/strong><\/p>"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {}
+        },
+        "4e7d2fc9-817c-4ae3-a1ac-9cc7122debbc": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "disabled": true,
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": true
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "separator": {
+          "type": "separator",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "variant",
+            "size_chart_page": "{{ product.metafields.custom.sizechart.value }}",
+            "sz_adv_caption": "Wie fallen diese Schlappys aus?",
+            "sz_adv_btn_caption": "Größenberater",
+            "sz_adv_popup_title": "Wie fallen diese Schlappys aus?",
+            "sz_adv_option1_name": "Normale\/schmale Füße",
+            "sz_adv_option1_result_title": "Wir empfehlen eine",
+            "sz_adv_option1_result_text": "Nummer größer",
+            "sz_adv_option2_name": "Breite Füße",
+            "sz_adv_option2_result_title": "Wir empfehlen die",
+            "sz_adv_option2_result_text": "gewohnte Größe",
+            "sz_adv_snippet_bg_color": "#eff1fc",
+            "sz_adv_snippet_txt_color": "#65628f",
+            "sz_adv_popup_option_1_txt_clr": "#1a1a1a",
+            "sz_adv_popup_option_1_bg_clr": "#fff8f4",
+            "sz_adv_popup_option_1_bord_clr": "#ffc4a2",
+            "sz_adv_popup_option_2_txt_clr": "#1a1a1a",
+            "sz_adv_popup_option_2_bg_clr": "#f3faf7",
+            "sz_adv_popup_option_2_bord_clr": "#95d5bb"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "3e5cb2be-1525-4c80-9b4d-87ce4c95eb36": {
+          "type": "offer",
+          "disabled": true,
+          "settings": {
+            "css_class": "",
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-happy",
+            "icon_width": 20,
+            "title": "Schlappy - Das Original.",
+            "content": "<p>Nur bei Schlappy im patentierten EVA Material - wir verwenden <span style=\"text-decoration:underline\"><strong>kein<\/strong><\/span> Plastik<\/p>",
+            "background": "#f2faff",
+            "text_color": "#215274"
+          }
+        },
+        "f0270238-61cf-4798-8eda-ec5ad070f99c": {
+          "type": "liquid",
+          "settings": {
+            "css_class": "",
+            "liquid": "{% render 'pdp-brand-advantages' %}"
+          }
+        },
+        "7cb71a2d-da87-4044-ab32-73947a7bac5c": {
+          "type": "inventory",
+          "settings": {
+            "low_inventory_threshold": 0
+          }
+        },
+        "2b1478e0-85b9-4290-887c-11961d9944b9": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bildschirmfoto_2023-05-26_um_19.31.54.png",
+            "alignment": "start",
+            "max_width": 350
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "atc_button_background": "rgba(0,0,0,0)",
+            "atc_button_text_color": "rgba(0,0,0,0)",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "ab8fcae7-39cc-4007-b391-c39359bc08e3": {
+          "type": "offer",
+          "settings": {
+            "css_class": "",
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-box",
+            "icon_width": 24,
+            "title": "Kostenloser Versand",
+            "content": "",
+            "background": "#eff1fc",
+            "text_color": "#65628f"
+          }
+        },
+        "42454d58-dc5e-4abc-837e-725ad4d73e68": {
+          "type": "offer",
+          "settings": {
+            "css_class": "",
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-return",
+            "icon_width": 24,
+            "title": "Kostenloser Umtausch",
+            "content": "",
+            "background": "#eff1fc",
+            "text_color": "#65628f"
+          }
+        },
+        "79e7deba-a9ef-4836-80a1-716bb20d608f": {
+          "type": "separator",
+          "settings": {}
+        },
+        "f892872f-28c7-4c68-8ad0-a4b3008f02e4": {
+          "type": "offer",
+          "settings": {
+            "css_class": "",
+            "text_alignment": "start",
+            "icon_position": "stacked",
+            "icon": "picto-document",
+            "custom_icon": "shopify:\/\/shop_images\/klarna-paypal-2.png",
+            "icon_width": 96,
+            "title": "Bequem auf Rechnung",
+            "content": "<p>Bezahle auf Rechnung mit Paypal oder Klarna<\/p>",
+            "background": "#f9f9f9",
+            "text_color": "#787878"
+          }
+        },
+        "c66efb70-b9b2-4f43-8f2d-32f1d513eda9": {
+          "type": "offer",
+          "settings": {
+            "css_class": "",
+            "text_alignment": "start",
+            "icon_position": "stacked",
+            "icon": "picto-love",
+            "custom_icon": "shopify:\/\/shop_images\/Calendar_Week30.png",
+            "icon_width": 28,
+            "title": "30 Tage Rückgaberecht",
+            "content": "<p>Risikofrei dank Zufriedenheits­garantie <\/p>",
+            "background": "#f9f9f9",
+            "text_color": "#787878"
+          }
+        },
+        "c30bc2cc-5acd-43cf-b9e5-e305d3ffd81d": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Beschreibung",
+            "content": "{{ product.metafields.custom.description | metafield_tag }}"
+          }
+        },
+        "10b72a71-eef7-41df-8e39-cd15fa92f95b": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Details",
+            "content": "{{ product.metafields.custom.details | metafield_tag }}"
+          }
+        },
+        "9c55291b-f2d1-4aae-93ba-3ebf8ec644c6": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Häufige Fragen",
+            "content": "<p><strong>Welche Größe brauche ich?<\/strong><\/p><ul><li><strong>normale\/schmale <\/strong>Füße, empfehlen wir deine <strong>gewohnte Größe.<\/strong><\/li><li><strong>breite <\/strong>Füße, empfehlen wir <strong>eine Nummer größer <\/strong><\/li><\/ul><p><strong>Seid ihr das Original?<\/strong><\/p><p>Ja! Wir sind die Originalhersteller und wir legen großen Wert auf Qualität und Kundenzufriedenheit. Wir verwenden nur die hochwertigsten Materialien, um sicherzustellen, dass unsere Schlappys bequem und langlebig sind.<\/p><p><strong>Aus welchem Material besteht Schlappy?<\/strong><br\/><br\/>Das Material besteht aus EVA. Ethylen-Vinylacetat-Co-Polymere sind ungiftig. Sie enthalten keine Weichmacher oder andere Hilfsstoffe.<br\/><br\/>Das hochwertige EVA-Material ist völlig unbedenklich und hautverträglich. Das Material wird weltweit für Einlegesohlen und Schuhe verwendet, da es langlebig und strapazierfähig ist.<br\/><\/p><p><\/p>"
+          }
+        },
+        "7960798a-eb0c-4097-9b87-c4b4b7cac0bf": {
+          "type": "collapsible_text",
+          "disabled": true,
+          "settings": {
+            "title": "Das Original Schlappy EVA-Material",
+            "content": "<p>Share some content to your customers about your products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c33350c5-55e7-453b-8de9-66db7628463b",
+        "89859e46-41f8-4001-bed9-10f8cdc36b5b",
+        "455c8124-7d11-498f-b667-fe8c7787e922",
+        "title",
+        "a2e10289-b2c1-4c6d-b753-4c7462497021",
+        "badges",
+        "4e7d2fc9-817c-4ae3-a1ac-9cc7122debbc",
+        "price",
+        "rating",
+        "separator",
+        "variant_picker",
+        "quantity_selector",
+        "3e5cb2be-1525-4c80-9b4d-87ce4c95eb36",
+        "f0270238-61cf-4798-8eda-ec5ad070f99c",
+        "7cb71a2d-da87-4044-ab32-73947a7bac5c",
+        "2b1478e0-85b9-4290-887c-11961d9944b9",
+        "buy_buttons",
+        "ab8fcae7-39cc-4007-b391-c39359bc08e3",
+        "42454d58-dc5e-4abc-837e-725ad4d73e68",
+        "79e7deba-a9ef-4836-80a1-716bb20d608f",
+        "f892872f-28c7-4c68-8ad0-a4b3008f02e4",
+        "c66efb70-b9b2-4f43-8f2d-32f1d513eda9",
+        "c30bc2cc-5acd-43cf-b9e5-e305d3ffd81d",
+        "10b72a71-eef7-41df-8e39-cd15fa92f95b",
+        "9c55291b-f2d1-4aae-93ba-3ebf8ec644c6",
+        "7960798a-eb0c-4097-9b87-c4b4b7cac0bf"
+      ],
+      "custom_css": [
+        "rtbutton.button--xl {padding-top: 25px !important; padding-bottom: 25px !important; font-size: 18px;}",
+        ".offer.bg-custom.text-custom {border-radius: 12px;}",
+        ".product-gallery__media img {mix-blend-mode: darken;}",
+        ".product-gallery__media {background-color: #f9f9f9;}",
+        ".block-swatch {padding-left: 15px !important; padding-right: 15px !important;}",
+        ".product-info__title.h3 {margin-bottom: -20px !important;}",
+        ".button.button--xl.w-full.klaviyo-bis-trigger {margin-top: 15px !important; width: 100% !important;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "show_fixed_add_to_cart": true,
+        "lock_atc_initially": false,
+        "disable_preselect": false,
+        "disable_preselected_size": false,
+        "desktop_media_width": 60,
+        "desktop_media_layout": "grid_highlight",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "#ffffff",
+        "background_gradient": "linear-gradient(270deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) 100%)",
+        "text_color": "",
+        "input_background": "#ffffff",
+        "input_text_color": ""
+      }
+    },
+    "16794221188ea7305d": {
+      "type": "apps",
+      "blocks": {
+        "6aefc439-1358-4971-8efd-5db867599d3a": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-polaris\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "disabled": true,
+          "settings": {
+            "star": "#ffb74a",
+            "review_type": "product_review,store_review,questions",
+            "per_page": 8,
+            "primary_btn_bg_color": "#000000",
+            "primary_btn_border_color": "#000000",
+            "primary_btn_text_color": "#ffffff",
+            "secondary_btn_border_color": "#000000",
+            "secondary_btn_text_color": "#000000",
+            "border_color": "#000000",
+            "heading_text_color": "#000000",
+            "heading_font": "helvetica_n4",
+            "body_text_color": "#000000",
+            "badge_icon_color": "#000000",
+            "badge_text_color": "#000000",
+            "enable_rich_snippets": true,
+            "show_location": true,
+            "show_tab_selector": false,
+            "show_dates": true,
+            "show_avatar": true,
+            "enable_replies": false,
+            "widget_spacing": 0,
+            "capitalise_headers": false,
+            "capitalise_buttons": false,
+            "show_review_title": false,
+            "default_sort": "date_desc"
+          }
+        },
+        "02e42a19-3c2f-472b-86e9-9ec6a7070267": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-card-carousel\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "star": "#ffb74a",
+            "review_type": "company",
+            "reviews_shown": 31,
+            "header_bg_colour": "#ffffff",
+            "header_colour": "#1a1a1a",
+            "header_star_colour": "#ffb74a",
+            "heading_text_colour": "#1e1864",
+            "heading_font": "sans-serif",
+            "body_text_colour": "#1a1a1a",
+            "badge_icon_colour": "#05b76f",
+            "badge_text_colour": "#1a1a1a",
+            "bg_start_colour": "#ffffff",
+            "bg_end_colour": "#f4f7fd",
+            "item_border_width": "1px",
+            "item_border_colour": "#e4eaf9",
+            "item_border_radius": "12px",
+            "item_shadow_size": "0px",
+            "item_shadow_colour": "#ffffff",
+            "enable_rich_snippets": true,
+            "disable_same_customer": true,
+            "logo_colour": "var(--logo-normal)"
+          }
+        }
+      },
+      "block_order": [
+        "6aefc439-1358-4971-8efd-5db867599d3a",
+        "02e42a19-3c2f-472b-86e9-9ec6a7070267"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": true,
+        "background": "",
+        "background_gradient": "linear-gradient(165deg, rgba(249, 251, 255, 1) 1%, rgba(228, 234, 249, 1) 100%)",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "b45a4103-8501-4952-bb55-69d208dc7ba5": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<br>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "bb50e314-16fc-46ed-8f64-61a3b5bef16c": {
+      "type": "media-with-text",
+      "blocks": {
+        "790b86f5-1f84-4147-881d-e2a4025ff9e8": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom[\"1_image\"].value }}",
+            "media_width": 45,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "{{ product.metafields.custom[\"1_title\"].value }}",
+            "content": "{{ product.metafields.custom[\"1_text\"] | metafield_tag }}",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "1b79a826-6a04-4fc0-98f9-cc7791cbb464": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom[\"2_image\"].value }}",
+            "media_width": 45,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "{{ product.metafields.custom[\"2_title\"].value }}",
+            "content": "{{ product.metafields.custom[\"2_text\"] | metafield_tag }}",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "fc6cdc74-73fe-42d4-8061-09f1070c3202": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom[\"3_image\"].value }}",
+            "media_width": 45,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "{{ product.metafields.custom[\"3_title\"].value }}",
+            "content": "{{ product.metafields.custom[\"3_text\"] | metafield_tag }}",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "ae2afde9-eebd-43c7-9866-bae83e80aa5b": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom[\"4_image\"].value }}",
+            "media_width": 45,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "{{ product.metafields.custom[\"4_title\"].value }}",
+            "content": "{{ product.metafields.custom[\"4_text\"] | metafield_tag }}",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "b88c3807-8b1e-4016-9cc0-7aa3faa297e6": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom[\"5_image\"].value }}",
+            "media_width": 45,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "{{ product.metafields.custom[\"5_title\"].value }}",
+            "content": "{{ product.metafields.custom[\"5_text\"] | metafield_tag }}",
+            "link_text": "",
+            "link_url": "",
+            "background": "#ffffff",
+            "background_gradient": "",
+            "text_color": "#1a1a1a",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "790b86f5-1f84-4147-881d-e2a4025ff9e8",
+        "1b79a826-6a04-4fc0-98f9-cc7791cbb464",
+        "fc6cdc74-73fe-42d4-8061-09f1070c3202",
+        "ae2afde9-eebd-43c7-9866-bae83e80aa5b",
+        "b88c3807-8b1e-4016-9cc0-7aa3faa297e6"
+      ],
+      "settings": {
+        "custom_class": "",
+        "full_width": false,
+        "enable_parallax": false,
+        "spacing": "large",
+        "swap_order_mobile": false
+      }
+    },
+    "232fcbef-d106-436c-ae3c-dfd9397e8e79": {
+      "type": "media-with-text",
+      "blocks": {
+        "9cc4db7f-6acd-4bae-932e-30dd619bf32f": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom[\"1_image\"].value }}",
+            "media_width": 60,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "{{ product.metafields.custom[\"1_title\"].value }}",
+            "content": "{{ product.metafields.custom[\"1_text\"] | metafield_tag }}",
+            "link_text": "",
+            "link_url": "",
+            "background": "{{ product.metafields.custom[\"1_title_color\"].value }}",
+            "background_gradient": "linear-gradient(127deg, rgba(248, 250, 255, 1) 10%, rgba(232, 237, 249, 1) 80%)",
+            "text_color": "#1e1864",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "32ac19f8-f6f3-495a-a764-d029183d0b29": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom[\"2_image\"].value }}",
+            "media_width": 60,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "{{ product.metafields.custom[\"2_title\"].value }}",
+            "content": "{{ product.metafields.custom[\"2_text\"] | metafield_tag }}",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "linear-gradient(161deg, rgba(250, 252, 255, 1) 10%, rgba(232, 237, 249, 1) 80%)",
+            "text_color": "#1e1864",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "62401234-ac5c-422a-8cc9-e2608e379051": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom[\"3_image\"].value }}",
+            "media_width": 60,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "{{ product.metafields.custom[\"3_title\"].value }}",
+            "content": "{{ product.metafields.custom[\"3_text\"] | metafield_tag }}",
+            "link_text": "",
+            "link_url": "",
+            "background": "{{ product.metafields.custom[\"3_title_color\"].value }}",
+            "background_gradient": "linear-gradient(165deg, rgba(248, 250, 255, 1) 10%, rgba(232, 237, 249, 1) 85%)",
+            "text_color": "#1e1864",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "9cc4db7f-6acd-4bae-932e-30dd619bf32f",
+        "32ac19f8-f6f3-495a-a764-d029183d0b29",
+        "62401234-ac5c-422a-8cc9-e2608e379051"
+      ],
+      "disabled": true,
+      "settings": {
+        "custom_class": "",
+        "full_width": true,
+        "enable_parallax": true,
+        "spacing": "large",
+        "swap_order_mobile": false
+      }
+    },
+    "8932c982-cb26-4a44-b174-4ce518664f9b": {
+      "type": "media-with-text",
+      "blocks": {
+        "472b4fdb-97ba-4025-a84d-5eb54f872d86": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom[\"1_image\"].value }}",
+            "media_width": 60,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f9f9f9",
+            "background_gradient": "",
+            "text_color": "#1f2743",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "3a5c173a-b4ff-407c-bbfd-c981941ff034": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom[\"2_image\"].value }}",
+            "media_width": 60,
+            "media_position": "end",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#f9f9f9",
+            "background_gradient": "",
+            "text_color": "#1f2743",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        },
+        "fb5c2c9f-8e76-4027-8164-d04310d3b696": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "{{ product.metafields.custom[\"3_image\"].value }}",
+            "media_width": 60,
+            "media_position": "start",
+            "text_position": "place-self-center-start text-start",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "{{ product.metafields.custom[\"3_title_color\"].value }}",
+            "background_gradient": "linear-gradient(165deg, rgba(248, 250, 255, 1) 10%, rgba(232, 237, 249, 1) 85%)",
+            "text_color": "#1e1864",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "472b4fdb-97ba-4025-a84d-5eb54f872d86",
+        "3a5c173a-b4ff-407c-bbfd-c981941ff034",
+        "fb5c2c9f-8e76-4027-8164-d04310d3b696"
+      ],
+      "disabled": true,
+      "settings": {
+        "custom_class": "",
+        "full_width": false,
+        "enable_parallax": true,
+        "spacing": "small",
+        "swap_order_mobile": false
+      }
+    },
+    "574ab470-ba64-49e3-940a-43d0c4888172": {
+      "type": "media-grid",
+      "blocks": {
+        "template--17896945811720__574ab470-ba64-49e3-940a-43d0c4888172-1679652424d0f4f70d-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Belt_orange_10.jpg",
+            "title": "Wasserfest",
+            "heading_tag": "h5",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-start sm:text-start",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#000000",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--17896945811720__574ab470-ba64-49e3-940a-43d0c4888172-1679652424d0f4f70d-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Belt_beige_06.jpg",
+            "title": "Sicherer Stand",
+            "heading_tag": "h5",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-start-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#1f2743",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        },
+        "template--17896945811720__574ab470-ba64-49e3-940a-43d0c4888172-1679652424d0f4f70d-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Belt_12.jpg",
+            "title": "Einfache Reinigung",
+            "heading_tag": "h5",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-start-end sm:text-end",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#1f2743",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#fbf9f7",
+            "overlay_opacity": 0
+          }
+        },
+        "75af8ba7-fcc2-4a29-b3ce-ee8badeb33eb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Belt_beige_01.jpg",
+            "title": "",
+            "heading_tag": "h4",
+            "link_url": "",
+            "link_text": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_column_span": 1,
+            "desktop_row_span": 2,
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "#000000",
+            "button_text_color": "#ffffff",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--17896945811720__574ab470-ba64-49e3-940a-43d0c4888172-1679652424d0f4f70d-0",
+        "template--17896945811720__574ab470-ba64-49e3-940a-43d0c4888172-1679652424d0f4f70d-1",
+        "template--17896945811720__574ab470-ba64-49e3-940a-43d0c4888172-1679652424d0f4f70d-2",
+        "75af8ba7-fcc2-4a29-b3ce-ee8badeb33eb"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "reduce_width": false,
+        "desktop_row_height": 220,
+        "mobile_row_height": 150,
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": ""
+      }
+    },
+    "2e37e8f6-7858-4239-99d3-89c6a8eb6e44": {
+      "type": "multiple-images-with-text",
+      "blocks": {
+        "template--17896945811720__2e37e8f6-7858-4239-99d3-89c6a8eb6e44-1679653215dbb467c1-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Belt_orange_10.jpg",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "Wasserfest",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "template--17896945811720__2e37e8f6-7858-4239-99d3-89c6a8eb6e44-1679653215dbb467c1-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Belt_12.jpg",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "Einfach zu reinigen",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        },
+        "08d2eef3-9eca-4788-a332-169ec538aa6d": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Belt_beige_01.jpg",
+            "image_rotation_degrees": 0,
+            "subheading": "",
+            "title": "Wetterfeste Sohle",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "button_url": "",
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17896945811720__2e37e8f6-7858-4239-99d3-89c6a8eb6e44-1679653215dbb467c1-0",
+        "template--17896945811720__2e37e8f6-7858-4239-99d3-89c6a8eb6e44-1679653215dbb467c1-1",
+        "08d2eef3-9eca-4788-a332-169ec538aa6d"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "images_layout": "collage",
+        "collage_images_alignment": "middle",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "2f10b851-e3f4-4f29-b7b3-e73479bf5683": {
+      "type": "multi-column",
+      "blocks": {
+        "template--17896945811720__2f10b851-e3f4-4f29-b7b3-e73479bf5683-16796516873a69d054-1": {
+          "type": "item",
+          "settings": {
+            "image": "{{ product.metafields.custom[\"3_image\"].value }}",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17896945811720__2f10b851-e3f4-4f29-b7b3-e73479bf5683-16796516873a69d054-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Belt_orange_10.jpg",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17896945811720__2f10b851-e3f4-4f29-b7b3-e73479bf5683-16796516873a69d054-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Schlappy_Belt_beige_01.jpg",
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17896945811720__2f10b851-e3f4-4f29-b7b3-e73479bf5683-16796516873a69d054-1",
+        "template--17896945811720__2f10b851-e3f4-4f29-b7b3-e73479bf5683-16796516873a69d054-0",
+        "template--17896945811720__2f10b851-e3f4-4f29-b7b3-e73479bf5683-16796516873a69d054-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "x-large",
+        "text_alignment": "start",
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "background": "#1e1864",
+        "background_gradient": "",
+        "text_color": "#ffffff"
+      }
+    },
+    "671ff383-ad5f-4722-81c1-372c43596c91": {
+      "type": "custom-liquid",
+      "custom_css": [
+        ".ElementsWidget-prefix .ElementsWidget .ElementsWidget__header .header__group .R-Button {display: none;}",
+        ".R-TextHeading.R-TextHeading--xxxs {display: none;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<script src=\"https:\/\/widget.reviews.io\/polaris\/build.js\"><\/script>\n<div id=\"ReviewsWidget\"><\/div>\n<script>\nnew ReviewsWidget('#ReviewsWidget', {\n\/\/Your REVIEWS.io Store ID and widget type:\nstore: 'www.schlappy.de',\nwidget: 'polaris',\n\n\/\/Content settings (store_review,product_review,third_party_review,questions). Choose what to display in this widget:\noptions: {\n    types: 'store_review,product_review,third_party_review',\n    lang: 'de',\n    \/\/Possible layout options: bordered, large and reverse.\n    layout: '',\n    \/\/How many reviews & questions to show per page?\n    per_page: 7,\n    store_review:{\n      hide_if_no_results: true,\n    },\n    third_party_review:{\n      hide_if_no_results: true,\n    },\n    product_review: {\n      sku: \"{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}\",\n      enable_rich_snippets: true,\n\n      \/* Your custom Structured Data *\/\n      structured_data: {\n\n        category: {{ product.type | json }},\n        {% capture gtin_length %}{{ product.variants.first.barcode | size }}{% endcapture %}\n\n\n        {% if gtin_length == \"14\" %}\n           gtin14:\"{{product.variants.first.barcode}}\",\n        {% elsif gtin_length == \"13\" %}\n           gtin13:\"{{product.variants.first.barcode}}\",\n        {% elsif gtin_length == \"12\" %}\n           gtin12:\"{{product.variants.first.barcode}}\",\n        {% endif %}\n\n        url: \"{{ shop.url }}{{ product.url }}\",\n\n        {%- if product.featured_image -%}\n          image: \"https:{{ product.featured_image | product_img_url: 'grande' }}\",\n        {%- endif -%}\n\n        {% if variant.image %}\n          {% assign variant_image_size = variant.image.width | append: 'x' %}\n          image: \"http:{{ variant.image.src | img_url: variant_image_size }}\",\n        {% endif %}\n\n        description: \"{{ product.description | strip_html | strip_newlines | escape }}\",\n        {% assign ruk_current_variant = product.selected_or_first_available_variant %}\n        {% assign ruk_variant_count = product.variants | size %}\n        {% assign ruk_count = 0 %}\n\n        {% if product.variants %}\n          {% assign ruk_count = ruk_count | plus: 1 %}\n\n          offers: [{\n              type: \"Offer\",\n              priceCurrency: \"{{ cart.currency.iso_code }}\",\n              price: \"{{ ruk_current_variant.price | money_without_currency | replace: ',', '.' }}\",\n              itemCondition: \"http:\/\/schema.org\/NewCondition\",\n              availability: \"http:\/\/schema.org\/{% if product.available %}InStock{% else %}OutOfStock{% endif %}\",\n              url: \"{{ shop.url }}{{ ruk_current_variant.url }}\",\n\n              {% if ruk_current_variant.image %}\n                  {% assign variant_image_size = ruk_current_variant.image.width | append: 'x' %}\n                  image: \"https:{{ ruk_current_variant.image.src | img_url: variant_image_size }}\",\n              {% else %}\n                  image: \"https:{{ product.featured_image.src | img_url: 'grande' }}\",\n              {% endif %}\n\n              {% if ruk_current_variant.title != 'Default Title' %}\n                  name: \"{{ product.title | strip_html | escape }} - {{ fa_current_variant.title | escape }}\",\n              {% else %}\n                  name: \"{{ product.title | strip_html | escape }}\",\n              {% endif %}\n\n              {% if ruk_current_variant.barcode.size == 12 %}\n                  gtin12: \"{{ ruk_current_variant.barcode }}\",\n              {% endif %}\n\n              {% if ruk_current_variant.barcode.size == 13 %}\n                  gtin13: \"{{ ruk_current_variant.barcode }}\",\n              {% endif %}\n\n              {% if ruk_current_variant.barcode.size == 14 %}\n                  gtin14: \"{{ ruk_current_variant.barcode }}\",\n              {% endif %}\n\n              {% if ruk_current_variant.sku != blank %}\n                  sku: \"{{ ruk_current_variant.sku }}\",\n              {% else %}\n                  sku: \"{{ ruk_current_variant.id }}\",\n              {% endif %}\n\n              {% if product.description != blank %}\n                  description: \"{{ product.description | strip_html | escape | strip_newlines }}\",\n              {% endif %}\n\n              priceValidUntil: \"{{ 'now' | date: '%s' | plus: 31536000 | date: '%Y-%m-%d' | uri_encode | replace:'+','%20' }}\"\n          }],\n        {% endif %}\n\n        brand: {\n          type: 'Brand',\n          name: '{{ product.vendor | escape }}',\n        },\n      },\n    },\n\n    \/* Toggle Options *\/\n    questions:{\n          hide_if_no_results:false,\n          enable_ask_question:true,\n          show_dates:true,\n          grouping:\"{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}\"\n    },\n\n    \/\/Header settings:\n    header:{\n        enable_summary: true, \/\/Show overall rating & review count\n        enable_ratings: true,\n        enable_attributes: true,\n        enable_image_gallery: true, \/\/Show photo & video gallery\n        enable_percent_recommended: false, \/\/Show what percentage of reviewers recommend it\n        enable_write_review: true, \/\/Show \"Write Review\" button\n        enable_ask_question: true, \/\/Show \"Ask Question\" button\n        enable_sub_header: true, \/\/Show subheader\n        rating_decimal_places: 2,\n    },\n\n    \/\/Filtering settings:\n    filtering:{\n        enable: true, \/\/Show filtering options\n        enable_text_search: true, \/\/Show search field\n        enable_sorting: true, \/\/Show sorting options (most recent, most popular)\n        enable_product_filter: false, \/\/Show product options filter\n        enable_media_filter: true, \/\/Show reviews with images\/video\/media options\n        enable_overall_rating_filter: true, \/\/Show overall rating breakdown filter\n        enable_language_filter: false, \/\/ Filter by review language\n        enable_language_filter_language_change: false, \/\/ Update widget language based on language selected\n        enable_ratings_filters: true, \/\/Show product attributes filter\n        enable_attributes_filters: true, \/\/Show author attributes filter\n    },\n\n    \/\/Review settings:\n    reviews:{\n        enable_avatar: true, \/\/Show author avatar\n        enable_reviewer_name:  true, \/\/Show author name\n        enable_reviewer_address:  true, \/\/Show author location\n        reviewer_address_format: 'city, country', \/\/Author location display format\n        enable_verified_badge: true, \/\/Show \"Verified Customer\" badge\n        enable_subscriber_badge: true, \/\/Show \"Verified Subscriber\" badge\n        review_content_filter: 'no_content', \/\/Filter content\n        enable_reviewer_recommends: true, \/\/Show \"I recommend it\" badge\n        enable_attributes: true, \/\/Show author attributes\n        enable_product_name: true, \/\/Show display product name\n        enable_review_title: true, \/\/Show review title\n        enable_replies: undefined, \/\/Show review replies\n        enable_images: true, \/\/Show display review photos\n        enable_ratings: true, \/\/Show product attributes (additional ratings)\n        enable_share: false, \/\/Show share buttons\n        enable_helpful_vote: true, \/\/Show \"was this helpful?\" section\n        enable_helpful_display: true, \/\/Show how many times times review upvoted\n        enable_report: true, \/\/Show report button\n        enable_date: true, \/\/Show when review was published\n        enable_third_party_source: false, \/\/ Show third party source\n\n\n    },\n},\n\/\/Translation settings\ntranslations: {\n    'Verified Customer': 'Verified Customer'\n},\n\/\/Style settings:\nstyles: {\n    \/\/Base font size is a reference size for all text elements. When base value gets changed, all TextHeading and TexBody elements get proportionally adjusted.\n    '--base-font-size': '16px',\n\n    \/\/Button styles (shared between buttons):\n    '--common-button-font-family': 'inherit',\n    '--common-button-font-size':'16px',\n    '--common-button-font-weight':'500',\n    '--common-button-letter-spacing':'0',\n    '--common-button-text-transform':'none',\n    '--common-button-vertical-padding':'10px',\n    '--common-button-horizontal-padding':'20px',\n    '--common-button-border-width':'0px',\n    '--common-button-border-radius':'12px',\n\n    \/\/Primary button styles:\n    '--primary-button-bg-color': '#1E1864',\n    '--primary-button-border-color': '#1E1864',\n    '--primary-button-text-color': '#ffffff',\n\n    \/\/Secondary button styles:\n    '--secondary-button-bg-color': 'transparent',\n    '--secondary-button-border-color': '#0E1311',\n    '--secondary-button-text-color': '#0E1311',\n\n    \/\/Star styles:\n    '--common-star-color': '#FFB74A',\n    '--common-star-disabled-color': 'rgba(0,0,0,0.25)',\n    '--medium-star-size': '22px',\n    '--small-star-size': '19px',\n\n    \/\/Heading styles:\n    '--heading-text-color': '#1E1864',\n    '--heading-text-font-weight': '400',\n    '--heading-text-font-family': 'inherit',\n    '--heading-text-line-height': '1.4',\n    '--heading-text-letter-spacing': '0',\n    '--heading-text-transform': 'none',\n\n    \/\/Body text styles:\n    '--body-text-color': '#0E1311',\n    '--body-text-font-weight': '400',\n    '--body-text-font-family': 'inherit',\n    '--body-text-line-height': '1.4',\n    '--body-text-letter-spacing': '0',\n    '--body-text-transform': 'none',\n\n    \/\/Input field styles:\n    '--inputfield-text-font-family': 'inherit',\n    '--input-text-font-size': '14px',\n    '--inputfield-text-font-weight': '400',\n    '--inputfield-text-color': '#0E1311',\n    '--inputfield-border-color': 'rgba(0,0,0,0.2)',\n    '--inputfield-background-color': 'transparent',\n    '--inputfield-border-width': '1px',\n    '--inputfield-border-radius': '0px',\n\n    '--common-border-color': 'rgba(0,0,0,0.15)',\n    '--common-border-width': '1px',\n    '--common-sidebar-width': '190px',\n\n    \/\/Slider indicator (for attributes) styles:\n    '--slider-indicator-bg-color': 'rgba(0,0,0,0.1)',\n    '--slider-indicator-button-color': '#222222',\n    '--slider-indicator-width': '190px',\n\n    \/\/Badge styles:\n    '--badge-icon-color': '#05B76F',\n    '--badge-icon-font-size': 'inherit',\n    '--badge-text-color': '#0E1311',\n    '--badge-text-font-size': 'inherit',\n    '--badge-text-letter-spacing': 'inherit',\n    '--badge-text-transform': 'inherit',\n\n    \/\/Author styles:\n    '--author-font-size': 'inherit',\n    '--author-text-transform': 'none',\n\n    \/\/Author avatar styles:\n    '--avatar-thumbnail-size': '60px',\n    '--avatar-thumbnail-border-radius': '100px',\n    '--avatar-thumbnail-text-color': '#0E1311',\n    '--avatar-thumbnail-bg-color': 'rgba(0,0,0,0.1)',\n\n    \/\/Product photo or review photo styles:\n    '--photo-video-thumbnail-size': '120px',\n    '--photo-video-thumbnail-border-radius': '8px',\n\n    \/\/Media (photo & video) slider styles:\n    '--mediaslider-scroll-button-icon-color': '#0E1311',\n    '--mediaslider-scroll-button-bg-color': 'rgba(255, 255, 255, 0.85)',\n    '--mediaslider-overlay-text-color': '#ffffff',\n    '--mediaslider-overlay-bg-color': 'rgba(0, 0, 0, 0.8))',\n    '--mediaslider-item-size': '110px',\n\n    \/\/Pagination & tabs styles (normal):\n    '--pagination-tab-text-color': '#0E1311',\n    '--pagination-tab-text-transform': 'none',\n    '--pagination-tab-text-letter-spacing': '0',\n    '--pagination-tab-text-font-size': '16px',\n    '--pagination-tab-text-font-weight': '400',\n\n    \/\/Pagination & tabs styles (active):\n    '--pagination-tab-active-text-color': '#0E1311',\n    '--pagination-tab-active-text-font-weight': '400',\n    '--pagination-tab-active-border-color': '#0E1311',\n    '--pagination-tab-border-width': '3px',\n},\n});\n<\/script>",
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "linear-gradient(146deg, rgba(249, 251, 255, 1) 1%, rgba(228, 234, 249, 1) 100%)",
+        "text_color": ""
+      }
+    },
+    "b0384421-516e-4628-a48b-2c44f4b308db": {
+      "type": "hot-spots",
+      "blocks": {
+        "template--17896945811720__b0384421-516e-4628-a48b-2c44f4b308db-1679578857353777f7-0": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 30,
+            "vertical_position": 59,
+            "horizontal_position_mobile": 24,
+            "vertical_position_mobile": 70,
+            "icon_width": 32,
+            "title": "100% Plastikfrei",
+            "content": "<p>Gefertigt aus dem original Schlappy EVA-Material und frei von Plastik.<\/p>"
+          }
+        },
+        "template--17896945811720__b0384421-516e-4628-a48b-2c44f4b308db-1679578857353777f7-1": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 50,
+            "vertical_position": 20,
+            "horizontal_position_mobile": 62,
+            "vertical_position_mobile": 14,
+            "icon_width": 32,
+            "title": "Entlastet beim Gehen",
+            "content": "<p>Endlich keine Scheuerstellen oder Blasen mehr, dank dem besonders weichen Material.<\/p>"
+          }
+        },
+        "template--17896945811720__b0384421-516e-4628-a48b-2c44f4b308db-1679578857353777f7-2": {
+          "type": "item",
+          "settings": {
+            "horizontal_position": 79,
+            "vertical_position": 61,
+            "horizontal_position_mobile": 83,
+            "vertical_position_mobile": 75,
+            "icon_width": 32,
+            "title": "Gepolstertes Fußbett",
+            "content": "<p>Unterstützt die natürliche Wölbung Deiner Füße und ist extra weich.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17896945811720__b0384421-516e-4628-a48b-2c44f4b308db-1679578857353777f7-0",
+        "template--17896945811720__b0384421-516e-4628-a48b-2c44f4b308db-1679578857353777f7-1",
+        "template--17896945811720__b0384421-516e-4628-a48b-2c44f4b308db-1679578857353777f7-2"
+      ],
+      "settings": {
+        "full_width": false,
+        "image": "{{ product.metafields.custom.hotspot_image.value }}",
+        "title": "",
+        "content": "",
+        "button_text": "",
+        "button_url": "",
+        "desktop_text_position": "place-self-start text-start",
+        "image_background": "",
+        "image_background_gradient": "",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "overlay_text_color": "#ffffff",
+        "overlay_button_background": "",
+        "overlay_button_text_color": "",
+        "hot_spot_dot_background": "#ffffff",
+        "hot_spot_dot_text_color": "#000000",
+        "hot_spot_content_background": "#ffffff",
+        "hot_spot_content_text_color": "#000000",
+        "hot_spot_content_opacity": 90,
+        "hot_spot_content_blur_radius": 3
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "recommendations_count": 2,
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 2,
+        "subheading": "",
+        "title": "Ähnliche Produkte",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
+    "1d182042-dbac-4ab7-88e2-8f0fbc623e30": {
+      "type": "faq",
+      "blocks": {
+        "template--17896945811720__1d182042-dbac-4ab7-88e2-8f0fbc623e30-1679578560655ec28e-0": {
+          "type": "item",
+          "settings": {
+            "title": "Aus welchem Material besteht Schlappy™?",
+            "content": "<p>Das Material besteht aus EVA. Ethylen-Vinylacetat-Co-Polymere sind ungiftig. Sie enthalten keine Weichmacher oder andere Hilfsstoffe.<br\/><br\/>Das hochwertige EVA-Material ist völlig unbedenklich und hautverträglich. Das Material wird weltweit für Einlegesohlen und Schuhe verwendet, da es langlebig und strapazierfähig ist.<br\/><\/p>"
+          }
+        },
+        "template--17896945811720__1d182042-dbac-4ab7-88e2-8f0fbc623e30-1679578560655ec28e-1": {
+          "type": "item",
+          "settings": {
+            "title": "Sind Schlappys sowohl für Männer als auch für Frauen geeignet? ",
+            "content": "<p>Ja! Unsere Schlappys sind als Unisex-Schlappen konzipiert und passen sich in Größe und Breite sowohl männlichen als auch weiblichen Füßen an.<\/p>"
+          }
+        },
+        "template--17896945811720__1d182042-dbac-4ab7-88e2-8f0fbc623e30-1679578560655ec28e-2": {
+          "type": "item",
+          "settings": {
+            "title": "Warum sollte ich bei euch bestellen?",
+            "content": "<p>Unsere Produkte sind einzigartig. Du findest sie nicht in lokalen Geschäften oder anderen Online Shops. Das Original gibt es nur bei Schlappy.<\/p>"
+          }
+        },
+        "174a0afb-ce3e-4fe2-8e1a-b72124f62e50": {
+          "type": "item",
+          "settings": {
+            "title": "Wann wird meine Bestellung verschickt?",
+            "content": "<p>In der Regel verlässt dein Paket unser Versandzentrum 1 - 2 Tage nach deiner Bestellung.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17896945811720__1d182042-dbac-4ab7-88e2-8f0fbc623e30-1679578560655ec28e-0",
+        "template--17896945811720__1d182042-dbac-4ab7-88e2-8f0fbc623e30-1679578560655ec28e-1",
+        "template--17896945811720__1d182042-dbac-4ab7-88e2-8f0fbc623e30-1679578560655ec28e-2",
+        "174a0afb-ce3e-4fe2-8e1a-b72124f62e50"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Häufige Fragen",
+        "content": "<p>Noch Fragen offen? Hier findest du einen Auszug häufiger Fragen und Antworten.<\/p>",
+        "team_avatar_width": 160,
+        "support_hours": "Frage nicht dabei? Unser Kundensupport Team hilft dir gerne weiter!",
+        "answer_time": "support@schlappy.de",
+        "button_text": "Alle häufigen Fragen ansehen",
+        "button_url": "shopify:\/\/pages\/faq",
+        "text_position": "start",
+        "background": "",
+        "background_gradient": "linear-gradient(137deg, rgba(250, 249, 255, 1) 7%, rgba(217, 226, 248, 1) 94%)",
+        "text_color": "#1e1864",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "#fcfdff",
+        "button_text_color": "#6a7794",
+        "accordion_background": "#ffffff",
+        "accordion_text_color": ""
+      }
+    },
+    "16799316300921a432": {
+      "type": "apps",
+      "blocks": {
+        "b7649f75-29c1-4116-8137-3141ec56cac1": {
+          "type": "shopify:\/\/apps\/vitals\/blocks\/product-reviews\/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "b7649f75-29c1-4116-8137-3141ec56cac1"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "rgba(0,0,0,0)",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16794221188ea7305d",
+    "b45a4103-8501-4952-bb55-69d208dc7ba5",
+    "bb50e314-16fc-46ed-8f64-61a3b5bef16c",
+    "232fcbef-d106-436c-ae3c-dfd9397e8e79",
+    "8932c982-cb26-4a44-b174-4ce518664f9b",
+    "574ab470-ba64-49e3-940a-43d0c4888172",
+    "2e37e8f6-7858-4239-99d3-89c6a8eb6e44",
+    "2f10b851-e3f4-4f29-b7b3-e73479bf5683",
+    "671ff383-ad5f-4722-81c1-372c43596c91",
+    "b0384421-516e-4628-a48b-2c44f4b308db",
+    "related-products",
+    "1d182042-dbac-4ab7-88e2-8f0fbc623e30",
+    "16799316300921a432"
+  ]
+}

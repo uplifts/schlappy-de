@@ -1,0 +1,75 @@
+<script>
+  document.addEventListener('variant:add', function(event) {
+    var _learnq = window._learnq || [];
+    var klAjax = true;
+    let items = event.detail.items;
+    let cart = event.detail.cart;
+
+    var cartObject = {
+      total_price: cart.total_price / 100,
+      $value: cart.total_price / 100,
+      total_discount: cart.total_discount,
+      original_total_price: cart.original_total_price / 100,
+      items: items
+    }
+
+    if (klAjax) {
+      _learnq.push(['track', 'Added to Cart', cartObject]);
+      klAjax = false;
+    }
+  });
+</script>
+
+{%- if request.page_type == 'product' -%}
+  {% if product.available == false %}
+    <style>
+      .klaviyo-bis-trigger {
+        width: 100% !important;
+      }
+
+      .add-to-cart-btn {
+        display: none !important;
+      }
+    </style>
+  {% endif %}
+  
+  <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
+  <script>
+    var klaviyo = klaviyo || [];
+    klaviyo.init({
+      account: "XBTiJe",
+     // list: "WuFp3X",
+      platform: "shopify"
+    });
+    klaviyo.enable("backinstock", { 
+      trigger: {
+        product_page_text: "Benachrichtige mich, sobald verfügbar",
+        product_page_class: "button button--xl w-full",
+        product_page_text_align: "center",
+        product_page_margin: "0px",
+        alternate_anchor: "klaviyo-bis-anchor",
+        replace_anchor: false
+      },
+      modal: {
+        headline: "{product_name}",
+        body_content: "Benachrichtige mich, sobald das Produkt wieder lieferbar ist.",
+        newsletter_subscribe_label: "Ich habe die Datenschutzbestimmungen zur Kenntnis genommen.",
+        email_field_label: "Email",
+        button_label: "Bestätigen",
+        subscription_success_label: "Vielen dank! Wir werden dich benarichtigen, wenn das Produkt wieder da ist.",
+        footer_content: "",
+        font_family: "Poppins,sans-serif",
+        drop_background_color: "#000",
+        background_color: "#fff",
+        text_color: "#222",
+        button_text_color: "#ffffff",
+        button_background_color: "#FF7528",
+        close_button_color: "#ccc",
+        error_background_color: "#FCD6D7",
+        error_text_color: "#C72E2F",
+        success_background_color: "#D3EFCD",
+        success_text_color: "#1B9500"
+      }
+    });
+  </script>
+{%- endif -%}

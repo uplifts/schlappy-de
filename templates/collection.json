@@ -1,0 +1,53 @@
+{
+  "sections": {
+    "banner": {
+      "type": "collection-banner",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "show_collection_title": true,
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "collection_title_size": "h1",
+        "image_size": "sm",
+        "image": "shopify:\/\/shop_images\/Schlappy_Header_v1_2800x1000_high-res.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Schlappy_Header_v1_2800x1000_high-res.jpg",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "featured_product": "",
+        "featured_product_heading": "Featured product",
+        "text_color": "#1e1864",
+        "overlay_color": "#f9faff",
+        "overlay_opacity": 3
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "custom_css": [
+        ".product-card__image {mix-blend-mode: darken;}",
+        ".bg-custom {background: rgb(var(--background)); border-radius: 12px !important;}",
+        ".product-card__image.product-card__image--primary.aspect-square {border-radius: 12px 12px 3px 3px !important;}",
+        ".badge--on-sale {font-weight: 500; border-radius: 7px;}",
+        ".reviews-io-rating-bar-widget {display: none;}"
+      ],
+      "settings": {
+        "products_per_page": 24,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "filter_layout": "drawer",
+        "show_sort_by": true,
+        "show_filters": false,
+        "show_filter_group_name": false,
+        "show_color_swatch": true,
+        "show_empty_filter_values": false,
+        "show_filter_values_count": true,
+        "open_first_filter_group": false
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "main"
+  ]
+}

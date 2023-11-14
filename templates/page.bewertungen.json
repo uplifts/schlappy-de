@@ -1,0 +1,129 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "16818302185373f2cf": {
+      "type": "apps",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "16818302851cdb8966": {
+      "type": "apps",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    },
+    "481105f7-552b-402d-a725-d0f7a9ec8a47": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17958714867976__481105f7-552b-402d-a725-d0f7a9ec8a47-1681977376a50d350e-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Kundenbewertungen",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--17958714867976__481105f7-552b-402d-a725-d0f7a9ec8a47-1681977376a50d350e-2": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Als Onlineshop ist Kundenzufriedenheit für uns von zentraler Bedeutung. Wir wissen, dass ein zufriedener Kunde nicht nur wiederkommt, sondern auch seine positiven Erfahrungen mit anderen teilt und somit unser Unternehmen weiterempfiehlt. <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17958714867976__481105f7-552b-402d-a725-d0f7a9ec8a47-1681977376a50d350e-1",
+        "template--17958714867976__481105f7-552b-402d-a725-d0f7a9ec8a47-1681977376a50d350e-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "16818302410e6d08da": {
+      "type": "apps",
+      "blocks": {
+        "0bb94ddf-1e1e-4a2d-8b24-c5642a61c138": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-card-carousel\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "star": "#000000",
+            "review_type": "company",
+            "reviews_shown": 20,
+            "header_bg_colour": "#000000",
+            "header_colour": "#ffffff",
+            "header_star_colour": "#ffffff",
+            "heading_text_colour": "#0e1311",
+            "heading_font": "helvetica_n4",
+            "body_text_colour": "#0e1311",
+            "badge_icon_colour": "#0e1311",
+            "badge_text_colour": "#0e1311",
+            "bg_start_colour": "#ffffff",
+            "bg_end_colour": "#ffffff",
+            "item_border_width": "0px",
+            "item_border_colour": "#000000",
+            "item_border_radius": "0px",
+            "item_shadow_size": "10px",
+            "item_shadow_colour": "#000000",
+            "enable_rich_snippets": false,
+            "disable_same_customer": false,
+            "logo_colour": "var(--logo-inverted)"
+          }
+        }
+      },
+      "block_order": [
+        "0bb94ddf-1e1e-4a2d-8b24-c5642a61c138"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16818302185373f2cf",
+    "16818302851cdb8966",
+    "481105f7-552b-402d-a725-d0f7a9ec8a47",
+    "16818302410e6d08da"
+  ]
+}

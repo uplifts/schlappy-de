@@ -1,0 +1,58 @@
+{
+  "type": "custom.overlay",
+  "name": "Overlay group",
+  "sections": {
+    "newsletter-popup": {
+      "type": "newsletter-popup",
+      "disabled": true,
+      "settings": {
+        "apparition_delay": 15,
+        "show_only_on_index": false,
+        "show_only_for_visitors": false,
+        "show_only_once": false,
+        "title": "Signup for our newsletter",
+        "button_text": "Subscribe",
+        "subtext": "Describe what your customers will receive when subscribing to your newsletter."
+      }
+    },
+    "privacy-banner": {
+      "type": "privacy-banner",
+      "settings": {
+        "privacy_bar_title": "Cookie policy",
+        "privacy_bar_content": "<p>We use cookies and similar technologies to provide the best experience on our website. Refer to our Privacy Policy for more information.<\/p>"
+      }
+    },
+    "cart-drawer": {
+      "type": "cart-drawer",
+      "settings": {
+        "success_message_background": "#ebfaf4",
+        "success_message_color": "#05b76f",
+        "success_message": "<strong>Gute Wahl!<\/strong> Hier sind deine Produkte:",
+        "show_cart_note": false,
+        "show_shipping_text": false,
+        "show_view_cart_button": false,
+        "show_checkout_button": true,
+        "show_payment_icons": true,
+        "recommendations_title": "Derzeit beliebt",
+        "products": [],
+        "product_card_background": "#ecf2fd",
+        "product_card_text_color": "#1e1864"
+      }
+    },
+    "search-drawer": {
+      "type": "search-drawer",
+      "settings": {
+        "full_width": false,
+        "show_article_category": true,
+        "search_menu": "",
+        "search_menu_show_title": true
+      }
+    }
+  },
+  "order": [
+    "newsletter-popup",
+    "privacy-banner",
+    "cart-drawer",
+    "search-drawer"
+  ]
+}

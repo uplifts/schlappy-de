@@ -1,0 +1,17 @@
+{% if content_for_header contains 'appsolve.io' %}
+{%- comment %}
+Hey there! This snippet is managed by Vitals (https://vitals.co).
+This file will be automatically updated and any manual changes will be lost.
+Last updated: Fri, 31 Mar 2023 01:30:01 +0000
+{% endcomment -%}
+{% if product %}
+<script data-ver="12" id="vtls-product-data">
+var vitals_product_data={"id": {{ product.id | json }}, "available": {{ product.available | json }}, "title": {{ product.title | json }}, "handle": {{ product.handle | json }}, "vendor": {{ product.vendor | json }}, "type": {{ product.type | json }}, "tags": {{ product.tags | json }}, "description": "{% unless product.description == blank %}1{% endunless %}", "featured_image": {% if product.featured_image %}{"src": "{{ product.featured_image | img_url: 'master' }}","aspect_ratio": "{{ product.featured_image.aspect_ratio }}"}{% else %}null{% endif %}, "collectionIds": [{% for c in product.collections %}{{c.id}}, {% endfor %}], "variants": [{% for v in product.variants %}{"id": {{ v.id | json }}, "title": {{ v.title | json }}, "option1": {{ v.option1 | json }}, "option2": {{ v.option2 | json }}, "option3": {{ v.option3 | json }}, "price": {{ v.price | json }}, "compare_at_price": {{ v.compare_at_price | json }}, "available": {{ v.available | json }}, "image": {% if v.image %}{"src": "{{ v.image | img_url: 'master' }}","alt": {{ v.image.alt | json }},"aspect_ratio": {{ v.image.aspect_ratio | json }}}{% else %}null{% endif %}, "is_preorderable": {% if v.inventory_management and v.inventory_quantity <= 0 and v.inventory_policy == 'continue' %}1{% else %}0{% endif %}, },{% endfor %}],"options": [{% for product_option in product.options_with_values %}{"name": {{ product_option.name | json }}},{% endfor %}]};
+</script>
+{% endif %}
+
+
+
+{{ shop.metafields.vitals["setupScript"] }}
+<script src="https://appsolve.io{{ content_for_header | split: 'appsolve.io' | last | split: '"' | first | replace: '\u0026' : '&' | replace: '\/' : '/' }}" async></script>
+{% endif %}

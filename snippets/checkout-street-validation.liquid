@@ -1,0 +1,170 @@
+<style>
+  :root {
+    --accent-color: #ff7528;
+    --accent-color-darker: #f45700;
+  }
+</style>
+
+<div class="street-popup">
+  <div class="street-popup__overlay js-street-popup__close">
+  </div>
+  <div class="street-popup__inner">
+    <div class="street-popup__text">
+      <p>{{ settings.sv_text }}</p>
+    </div>
+    <div class="street-popup__buttons">
+      <span class="street-popup__button street-popup__button--primary js-street-popup__button--next">
+        {{ settings.sv_option_1 }}
+      </span>
+      <span class="street-popup__button street-popup__button--secondary js-street-popup__button--add">
+        {{ settings.sv_option_2 }}
+      </span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .street-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.3s;
+  }
+  
+  .street-popup--active {
+    opacity: 1;
+    z-index: 100;
+  }
+  
+  .street-popup__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .street-popup__inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    z-index: 2;
+    background: white;
+    border-radius: 3px;
+    padding: 30px 20px;
+    transform: translate(-50%, -50%);
+  }
+  
+  .street-popup__text {
+    text-align: center;
+  }
+  
+  .street-popup__buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .street-popup__button {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid var(--accent-color);
+    margin: 10px 5px;
+    transition: all 0.3s;
+    text-align: center;
+  }
+  
+  .street-popup__button--primary {
+    color: var(--accent-color);
+  }
+  
+  .street-popup__button--primary:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+  }
+  .street-popup__button--secondary {
+    color: #fff;
+    background-color: var(--accent-color);
+  }
+  
+  .street-popup__button--secondary:hover {
+    background-color: var(--accent-color-darker);
+  }
+  
+  @media (max-width: 480px) {
+    .street-popup__inner {
+      width: 300px;
+      padding: 20px 15px;
+    }
+    
+    .street-popup__buttons {
+      flex-direction: column;
+      margin-top: 15px;
+    }
+    
+    .street-popup__button {
+      width: 190px;
+      margin: 5px auto;
+    }
+  }
+</style>
+
+<script>
+ (function($) {
+    var $shipping_btn = $('[data-step="contact_information"] .step__footer__continue-btn');
+    var $step_footer = $('[data-step-footer]');
+    var html_btn = '<button name="button" type="button" class="btn js-street-popup__trigger"><span class="btn__content" data-continue-button-content="true">Weiter zum Versand</span><svg class="icon-svg icon-svg--size-18 btn__spinner icon-svg--spinner-button" aria-hidden="true" focusable="false"> <use xlink:href="#spinner-button"></use> </svg></button>';
+    if ($shipping_btn.length > 0) {
+      $step_footer.prepend(html_btn);
+      $shipping_btn.hide();
+    }
+    
+    function hasNumber(myString) { return /\d/.test(myString); }
+    function hasNumbersOnly(myString) { return /^\d+$/.test(myString); }
+    
+    $(document).on('click', '.js-street-popup__trigger', function() {
+      var val = $('#checkout_shipping_address_address1').val();
+      if (!hasNumber(val)) {
+        $('.street-popup__text p').text('{{ settings.sv_text }}');
+        $('.street-popup__button--primary').text('{{ settings.sv_option_1 }}');
+        $('.street-popup__button--secondary').text('{{ settings.sv_option_2 }}');
+        $('.street-popup').addClass('street-popup--active');
+      }
+      else if (hasNumbersOnly(val)) {
+        $('.street-popup__text p').text('{{ settings.sv_text_2 }}');
+        $('.street-popup__button--primary').text('{{ settings.sv_option_1_2 }}');
+        $('.street-popup__button--secondary').text('{{ settings.sv_option_2_2 }}');
+        $('.street-popup').addClass('street-popup--active');
+      }
+      else {        
+        $('.street-popup').removeClass('street-popup--active');
+        $('.js-street-popup__trigger').hide();
+        $shipping_btn.show();
+        $shipping_btn.trigger('click');
+      }
+    });
+    
+    $(document).on('click', '.js-street-popup__overlay', function() {
+      $('.street-popup').removeClass('street-popup--active');
+    });
+    
+    $(document).on('click', '.js-street-popup__button--next', function() {
+      $('.street-popup').removeClass('street-popup--active');
+      $('.js-street-popup__trigger').hide();
+      $shipping_btn.show();
+      $shipping_btn.trigger('click');
+    });
+    
+    $(document).on('click', '.js-street-popup__button--add', function() {
+      $('.street-popup').removeClass('street-popup--active');
+      $('#checkout_shipping_address_address1').focus();
+    });
+  })(Checkout.$);
+</script>

@@ -1,0 +1,28 @@
+{% assign brand_advantages = shop.metaobjects.brand_advantages['pdp-brand-advantages-fur'].pdp_brand_advantages.value %}
+{%- if brand_advantages != blank -%}
+  <div class="pdp-brand-advantages">
+    {%- for item in brand_advantages -%}
+      {%- assign icon = item.icon.value -%}
+      {%- assign text = item.text.value -%}
+  
+      {%- if icon != blank or text != blank -%}
+        <div class="pdp-brand-advantage">
+          {%- if icon != blank -%}
+            <div class="pdp-brand-advantage--icon">
+              <img
+                src="{{ icon | img_url: 'master' }}"
+                alt="{{ icon.alt }}"
+                loading="lazy">
+            </div>
+          {%- endif -%}
+    
+          {%- if text != blank -%}
+            <div class="pdp-brand-advantage--text">
+              {{ text }}
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    {%- endfor -%}
+  </div>
+{%- endif -%}

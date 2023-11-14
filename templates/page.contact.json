@@ -1,0 +1,101 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "17546ffc-09bd-4234-99a5-8cccf626a646": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17896945647880__17546ffc-09bd-4234-99a5-8cccf626a646-1679417562aa7a9507-0": {
+          "type": "subheading",
+          "disabled": true,
+          "settings": {
+            "text": "Vielleicht haben wir deine Frage schon beantwortet"
+          }
+        },
+        "template--17896945647880__17546ffc-09bd-4234-99a5-8cccf626a646-1679417562aa7a9507-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Finde direkt eine passende Antwort...",
+            "heading_tag": "h2",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--17896945647880__17546ffc-09bd-4234-99a5-8cccf626a646-1679417562aa7a9507-2": {
+          "type": "richtext",
+          "disabled": true,
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "8143e03d-d943-4cf4-844e-13670db0bd34": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Häufigen Fragen ansehen",
+            "url": "shopify:\/\/pages\/faq",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17896945647880__17546ffc-09bd-4234-99a5-8cccf626a646-1679417562aa7a9507-0",
+        "template--17896945647880__17546ffc-09bd-4234-99a5-8cccf626a646-1679417562aa7a9507-1",
+        "template--17896945647880__17546ffc-09bd-4234-99a5-8cccf626a646-1679417562aa7a9507-2",
+        "8143e03d-d943-4cf4-844e-13670db0bd34"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#fafaff",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "contact": {
+      "type": "contact",
+      "blocks": {
+        "c33018f1-9a9f-4318-90ff-70de91213f7a": {
+          "type": "text",
+          "settings": {
+            "title": "Bestellnummer (optional)",
+            "use_long_text": false
+          }
+        }
+      },
+      "block_order": [
+        "c33018f1-9a9f-4318-90ff-70de91213f7a"
+      ],
+      "settings": {
+        "full_width": false,
+        "subheading": "",
+        "title": "Wir helfen dir gerne!",
+        "content": "<p>Echte Hilfe von echten Menschen erhalten. Wir sind von 9:00-20:00 Uhr Werktags für dich verfügbar. <\/p>",
+        "text_position": "center",
+        "contact_form_size": "large",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "rgba(0,0,0,0)",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "#ffffff",
+        "contact_text_color": "rgba(0,0,0,0)",
+        "button_background": "#ffc6a6",
+        "button_text_color": "#ff640d"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "17546ffc-09bd-4234-99a5-8cccf626a646",
+    "contact"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "newsletter": {
+          "type": "newsletter",
+          "settings": {
+            "image_width": 150,
+            "heading_size": "h5",
+            "title": "",
+            "content": "",
+            "custom_form_snippet": "<div class=\"klaviyo-form-XhCFjr\"><\/div>"
+          }
+        },
+        "c8587bc3-30ec-4dc3-8873-7df340f33742": {
+          "type": "text",
+          "settings": {
+            "title": "Weitere Informationen",
+            "content": "<p>Wir haben bereits über 120.000 Menschen mit unseren Schlappys glücklich gemacht.<br\/><br\/>Support: support@schlappy.de<br\/>Rücksendung: <a href=\"https:\/\/schlappy.returnsportal.online\/\" title=\"Retourenportal - 8returns\">Retourenportal <\/a><br\/><br\/>Heusenstamm<br\/>Deutschland<\/p>"
+          }
+        },
+        "53fa12eb-0e70-495c-88b3-6c2a87de4e20": {
+          "type": "links",
+          "settings": {
+            "menu": "allgemein",
+            "show_menu_title": true
+          }
+        },
+        "links": {
+          "type": "links",
+          "settings": {
+            "menu": "hilfe",
+            "show_menu_title": true
+          }
+        },
+        "a2c48bb9-2a16-4d4a-bce3-7102327639c0": {
+          "type": "links",
+          "disabled": true,
+          "settings": {
+            "menu": "footer",
+            "show_menu_title": true
+          }
+        }
+      },
+      "block_order": [
+        "newsletter",
+        "c8587bc3-30ec-4dc3-8873-7df340f33742",
+        "53fa12eb-0e70-495c-88b3-6c2a87de4e20",
+        "links",
+        "a2c48bb9-2a16-4d4a-bce3-7102327639c0"
+      ],
+      "custom_css": [
+        "p {color: #626262;}"
+      ],
+      "settings": {
+        "show_social_media": true,
+        "show_payment_icons": true,
+        "show_country_selector": false,
+        "show_country_flag": false,
+        "show_country_name": false,
+        "show_locale_selector": true
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

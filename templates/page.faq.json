@@ -1,0 +1,225 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "1741319d-da67-40f0-b59a-180bb126c3da": {
+      "type": "faq",
+      "blocks": {
+        "0844e3e5-bca9-4454-8585-291db2674763": {
+          "type": "item",
+          "settings": {
+            "title": "Seid ihr das Original?",
+            "content": "<p>Ja! Wir sind die Originalhersteller und wir legen großen Wert auf Qualität und Kundenzufriedenheit. Wir verwenden nur die hochwertigsten Materialien, um sicherzustellen, dass unsere Schlappys bequem und langlebig sind.<\/p>"
+          }
+        },
+        "f7416dbf-8b37-4a6b-80d6-d11000a04a35": {
+          "type": "item",
+          "settings": {
+            "title": "Wie lange dauert der Versand?",
+            "content": "<p>Die Lieferzeit beträgt 1-3 Werktage. Du erhältst innerhalb von 48 Stunden deine Tracking ID und kannst den Status deiner Bestellung jederzeit einsehen.<br\/><\/p>"
+          }
+        },
+        "template--17896945680648__1741319d-da67-40f0-b59a-180bb126c3da-167895593933165f8a-0": {
+          "type": "item",
+          "settings": {
+            "title": "Wann wird meine Bestellung verschickt?",
+            "content": "<p>In der Regel verlässt dein Paket unser Versandzentrum 1 - 2 Tage nach deiner Bestellung.<\/p>"
+          }
+        },
+        "template--17896945680648__1741319d-da67-40f0-b59a-180bb126c3da-167895593933165f8a-1": {
+          "type": "item",
+          "settings": {
+            "title": "Wo finde ich meine Sendungsverfolgungsnummer? ",
+            "content": "<p>Sobald Deine Bestellung von unserem Lager versandt wurde, senden wir Dir eine weitere E-Mail mit einem Link zur Sendungsverfolgung.<\/p>"
+          }
+        },
+        "c6c85fe0-33d6-4199-b7d6-844f08d98316": {
+          "type": "item",
+          "settings": {
+            "title": "Ich möchte einen oder mehrere Artikel umtauschen, wie gehe ich vor?",
+            "content": "<p>Für den Fall, dass Dir ein oder mehrere Artikel nicht passen, müssen folgende Bedingungen für eine Rücksendung erfüllt sein: <\/p><ul><li>Du befindest Dich innerhalb des 30-tägigen Widerrufsrechts<\/li><li>Falls der Artikel beschädigt ist, darfst Du es nicht gewesen sein<\/li><li>Der Artikel muss sauber sein und darf weder Flecken noch Haare oder Staub aufweisen<\/li><li>Ein Umtausch ist nur in der Farbe oder Größe möglich, jedoch nicht in ein anderes Produkt<\/li><\/ul><p><em><strong>Der Umtausch ist kostenfrei!<\/strong><\/em><br\/><br\/>Deine Bestellung kannst du über das <a href=\"https:\/\/schlappy.returnsportal.online\/\" title=\"Retourenportal - 8returns\"><strong>Retourenportal<\/strong><\/a> einfach Umtauschen. Darunter kannst du dein Umtausch ankündigen und bekommst somit auch gleich die <strong>Versandlabels per E-Mail zugeschickt.<\/strong><\/p>"
+          }
+        },
+        "871f953a-07f6-4ab8-b605-7555696cb001": {
+          "type": "item",
+          "settings": {
+            "title": "Ich möchte meine Bestellung zurücksenden. Wie gehe ich vor?",
+            "content": "<p>Für den Fall, dass Dir ein oder mehrere Artikel nicht gefallen, müssen folgende Bedingungen für eine Rücksendung erfüllt sein:<\/p><ul><li>Du befindest dich innerhalb des 30-tägigen Widerrufsrechts<\/li><li>Falls der Artikel beschädigt ist, darfst du es nicht gewesen sein<\/li><li>Der Artikel muss sauber sein und darf weder Flecken noch Haare oder Staub aufweisen<\/li><\/ul><p>Deine Bestellung kannst du über das <a href=\"https:\/\/schlappy.returnsportal.online\/\" title=\"Retourenportal - 8returns\"><strong>Retourenportal<\/strong><\/a> einfach retournieren. Darunter kannst du deine Retoure ankündigen und bekommst somit auch gleich die Versandlabels per E-Mail zugeschickt.<\/p><p>Trage ein, welche Artikel deiner Bestellung du rückerstattet bekommen möchtest..<br\/><\/p>"
+          }
+        },
+        "6f285bc2-92b4-483c-bd85-c43ee81efe5d": {
+          "type": "item",
+          "settings": {
+            "title": "Wo wird Schlappy Original hergestellt?",
+            "content": "<p><strong>Schlappy Original<\/strong> wird in<strong> Europa hergestellt <\/strong>und entspricht dem <strong>europäischen Standard<\/strong>. Wir sind stolz darauf, dass wir bei der Herstellung unserer Produkte auf <strong>höchste Qualität und Sicherheit achten.<\/strong> Deshalb verwenden wir nur <strong>hochwertige Materialien<\/strong> und führen <strong>regelmäßige Qualitätskontrollen <\/strong>durch, um sicherzustellen, dass unsere Kunden nur das Beste erhalten.<\/p>"
+          }
+        },
+        "104979af-00cd-42f0-9358-69e153cf87c5": {
+          "type": "item",
+          "settings": {
+            "title": "Ist Schlappy™ sowohl für Männer als auch für Frauen geeignet? ",
+            "content": "<p>Ja! Unsere Schlappys sind als Unisex-Schlappen konzipiert und passen sich in Größe und Breite sowohl männlichen als auch weiblichen Füßen an.<\/p>"
+          }
+        },
+        "186e197c-4fb8-44b6-9f58-4177d381dcb6": {
+          "type": "item",
+          "settings": {
+            "title": "Aus welchem Material besteht Schlappy™?",
+            "content": "<p>Das Material besteht aus EVA. Ethylen-Vinylacetat-Co-Polymere sind ungiftig. Sie enthalten keine Weichmacher oder andere Hilfsstoffe.<br\/><br\/>Das hochwertige EVA-Material ist völlig unbedenklich und hautverträglich. Das Material wird weltweit für Einlegesohlen und Schuhe verwendet, da es langlebig und strapazierfähig ist.<\/p>"
+          }
+        },
+        "template--17896945680648__1741319d-da67-40f0-b59a-180bb126c3da-167895593933165f8a-2": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "title": "Ich verfolge meine Bestellung, der Lieferstatus ändert sich aber nicht. Was soll ich tun?",
+            "content": "<p>Unser Versandpartner kommt bei hohem Bestellaufkommen teilweise mit der Aktualisierung des Trackings nicht hinterher. Sollte dein Lieferstatus nach <strong>5-7 Tagen<\/strong> unverändert bleiben, kontaktiere bitte unseren Kundensupport über unser <a href=\"https:\/\/schlappy.de\/pages\/kontakt\"><strong>Kontaktformular<\/strong><\/a>.<br\/><br\/><\/p>"
+          }
+        },
+        "56fa1c68-0dd4-4959-8792-2f63bfd49fe8": {
+          "type": "item",
+          "settings": {
+            "title": "Warum sollte ich bei euch bestellen?",
+            "content": "<p>Unsere Produkte sind einzigartig. Du findest sie nicht in lokalen Geschäften oder anderen Online Shops.<br\/><br\/><\/p>"
+          }
+        },
+        "d05ef7c0-dbbb-419e-be43-4cc7dc700760": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "title": "Was geschieht, wenn das Produkt beschädigt ankommt?",
+            "content": "<p>Für den Fall, dass eine oder mehrere Artikel Deiner Bestellung „kaputt“ angekommen sind oder Fehler aufweisen, sende uns bitte eine Mail mit folgenden Informationen:<\/p><p><span style=\"text-decoration:underline\">Unser Kontakt lautet:<\/span> <strong>support@schlappy.de<\/strong><\/p><ul><li><strong>Bestellnummer<\/strong><\/li><li><strong>Name des beschädigten Produkts<\/strong><\/li><li><strong>Foto des Mangels<\/strong><\/li><\/ul><p>Bei Mängeln zahlen selbstverständlich wir die Rücksendekosten und senden kostenfrei erneut das Produkt zu.<\/p><p>Unser Support wird Deine Anfrage schnellstmöglich bearbeiten und Dir einen Retourenschein ausstellen.<\/p>"
+          }
+        },
+        "c4794791-b092-4c12-9798-3c7ffe80c25a": {
+          "type": "item",
+          "settings": {
+            "title": "Ich habe einen Rabattcode bekommen, wie löse ich diesen ein?",
+            "content": "<p>Rabatt- und Aktionscodes kannst Du im Checkout unter \"Bestellzusammenfassung anzeigen\" einlösen.<\/p>"
+          }
+        },
+        "194278ea-19be-4135-9101-266542ac602e": {
+          "type": "item",
+          "settings": {
+            "title": "Welche Zahlungsarten werden unterstützt?",
+            "content": "<p>- Kreditkarten ( VISA, Mastercard, American Express)<br\/>- SOFORT Banking<br\/>- PayPal<br\/>- Klarna Kauf auf Rechnung<br\/>- Amazon Pay<\/p>"
+          }
+        },
+        "93edd430-d541-4754-bde9-49f0eb7ccb5e": {
+          "type": "item",
+          "settings": {
+            "title": "Wo finde ich eine Größentabelle?",
+            "content": "<p>Auf jeder Produktseite findest Du neben der Preisangabe die Größentabellen.<\/p>"
+          }
+        },
+        "e6100407-582c-4841-94eb-dccd3f5927fa": {
+          "type": "item",
+          "settings": {
+            "title": "Wie erreiche ich den Support?",
+            "content": "<p>Nutze einfach unser <a href=\"https:\/\/schlappy.de\/pages\/kontakt\">Kontaktformular<\/a> oder schreibe eine E-Mail an: <br\/>Support@schlappy.de<br\/><br\/>Montag - Freitag: 9:00 - 18:00 Uhr<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "0844e3e5-bca9-4454-8585-291db2674763",
+        "f7416dbf-8b37-4a6b-80d6-d11000a04a35",
+        "template--17896945680648__1741319d-da67-40f0-b59a-180bb126c3da-167895593933165f8a-0",
+        "template--17896945680648__1741319d-da67-40f0-b59a-180bb126c3da-167895593933165f8a-1",
+        "c6c85fe0-33d6-4199-b7d6-844f08d98316",
+        "871f953a-07f6-4ab8-b605-7555696cb001",
+        "6f285bc2-92b4-483c-bd85-c43ee81efe5d",
+        "104979af-00cd-42f0-9358-69e153cf87c5",
+        "186e197c-4fb8-44b6-9f58-4177d381dcb6",
+        "template--17896945680648__1741319d-da67-40f0-b59a-180bb126c3da-167895593933165f8a-2",
+        "56fa1c68-0dd4-4959-8792-2f63bfd49fe8",
+        "d05ef7c0-dbbb-419e-be43-4cc7dc700760",
+        "c4794791-b092-4c12-9798-3c7ffe80c25a",
+        "194278ea-19be-4135-9101-266542ac602e",
+        "93edd430-d541-4754-bde9-49f0eb7ccb5e",
+        "e6100407-582c-4841-94eb-dccd3f5927fa"
+      ],
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Häufige Fragen",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "",
+        "answer_time": "",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "#fafaff",
+        "accordion_text_color": ""
+      }
+    },
+    "b22e00f3-377c-4491-bc1c-64be04ff4f3e": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17896945680648__b22e00f3-377c-4491-bc1c-64be04ff4f3e-1679417562aa7a9507-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "Frage noch offen?"
+          }
+        },
+        "template--17896945680648__b22e00f3-377c-4491-bc1c-64be04ff4f3e-1679417562aa7a9507-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Kontakt aufnehmen",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "template--17896945680648__b22e00f3-377c-4491-bc1c-64be04ff4f3e-1679417562aa7a9507-2": {
+          "type": "richtext",
+          "settings": {
+            "content": ""
+          }
+        },
+        "cdacfb10-1a3e-4f98-a544-b1d3b0f1c7f1": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Kontaktieren",
+            "url": "shopify:\/\/pages\/kontakt",
+            "background": "#ff7528",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "template--17896945680648__b22e00f3-377c-4491-bc1c-64be04ff4f3e-1679417562aa7a9507-0",
+        "template--17896945680648__b22e00f3-377c-4491-bc1c-64be04ff4f3e-1679417562aa7a9507-1",
+        "template--17896945680648__b22e00f3-377c-4491-bc1c-64be04ff4f3e-1679417562aa7a9507-2",
+        "cdacfb10-1a3e-4f98-a544-b1d3b0f1c7f1"
+      ],
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#f4f7fd",
+        "background_gradient": "",
+        "text_color": "#1e1864"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1741319d-da67-40f0-b59a-180bb126c3da",
+    "b22e00f3-377c-4491-bc1c-64be04ff4f3e"
+  ]
+}

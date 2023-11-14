@@ -1,0 +1,223 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "f74642b3-2eb2-47b8-bef1-034240c36fe5": {
+      "type": "slideshow",
+      "disabled": true,
+      "blocks": {
+        "template--17896945713416__f74642b3-2eb2-47b8-bef1-034240c36fe5-1678968867f7f75ac5-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_a475a201-419d-485f-bc13-d2e60baaf3fb.jpg",
+            "content_max_width": 780,
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "subheading": "Schlappy",
+            "title": "Über Uns",
+            "heading_tag": "h0",
+            "button_text": "",
+            "button_link": "",
+            "text_color": "#ffffff",
+            "button_background": "#ffffff",
+            "button_text_color": "#000000",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30,
+            "background": "",
+            "background_gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17896945713416__f74642b3-2eb2-47b8-bef1-034240c36fe5-1678968867f7f75ac5-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "allow_transparent_header": true,
+        "image_size": "md",
+        "controls_type": "dots",
+        "transition_type": "fade_with_text",
+        "autoplay": false,
+        "cycle_speed": 6,
+        "background": "#f2f2f2",
+        "background_gradient": ""
+      }
+    },
+    "d1e89dc0-9410-4906-8214-ba64ec11e4a5": {
+      "type": "multi-column",
+      "disabled": true,
+      "blocks": {
+        "template--17896945713416__d1e89dc0-9410-4906-8214-ba64ec11e4a5-167896897744a54256-0": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17896945713416__d1e89dc0-9410-4906-8214-ba64ec11e4a5-167896897744a54256-1": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "template--17896945713416__d1e89dc0-9410-4906-8214-ba64ec11e4a5-167896897744a54256-2": {
+          "type": "item",
+          "settings": {
+            "column_size": "3",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "template--17896945713416__d1e89dc0-9410-4906-8214-ba64ec11e4a5-167896897744a54256-0",
+        "template--17896945713416__d1e89dc0-9410-4906-8214-ba64ec11e4a5-167896897744a54256-1",
+        "template--17896945713416__d1e89dc0-9410-4906-8214-ba64ec11e4a5-167896897744a54256-2"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "start",
+        "subheading": "Unsere Zielsetzung",
+        "title": "Was uns antreibt",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "1ed79040-e535-4b3c-8e7a-1ed40ba1cc55": {
+      "type": "media-with-text",
+      "disabled": true,
+      "blocks": {
+        "template--17896945713416__1ed79040-e535-4b3c-8e7a-1ed40ba1cc55-16789690398807960e-0": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17896945713416__1ed79040-e535-4b3c-8e7a-1ed40ba1cc55-16789690398807960e-0"
+      ],
+      "settings": {
+        "full_width": false,
+        "enable_parallax": true,
+        "spacing": "small"
+      }
+    },
+    "473505f6-26c8-4090-a755-fba13121f63f": {
+      "type": "media-with-text",
+      "disabled": true,
+      "blocks": {
+        "136998eb-03bf-4b8b-8e0e-74b9b41d819d": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Heading",
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#000000",
+            "background_gradient": "",
+            "text_color": "#ffffff",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "136998eb-03bf-4b8b-8e0e-74b9b41d819d"
+      ],
+      "settings": {
+        "full_width": false,
+        "enable_parallax": true,
+        "spacing": "small"
+      }
+    },
+    "7b0543bc-30d1-4729-9319-da8fc28af09d": {
+      "type": "blog-posts",
+      "disabled": true,
+      "blocks": {
+        "template--17896945713416__7b0543bc-30d1-4729-9319-da8fc28af09d-167897007700a61aa6-0": {
+          "type": "article",
+          "settings": {
+            "article": "",
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17896945713416__7b0543bc-30d1-4729-9319-da8fc28af09d-167897007700a61aa6-0"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_excerpt": true,
+        "show_date": false,
+        "show_author": false,
+        "show_comments_count": false,
+        "show_category": true,
+        "subheading": "",
+        "title": "Unser Standort",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f74642b3-2eb2-47b8-bef1-034240c36fe5",
+    "d1e89dc0-9410-4906-8214-ba64ec11e4a5",
+    "1ed79040-e535-4b3c-8e7a-1ed40ba1cc55",
+    "473505f6-26c8-4090-a755-fba13121f63f",
+    "7b0543bc-30d1-4729-9319-da8fc28af09d"
+  ]
+}

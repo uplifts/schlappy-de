@@ -1,0 +1,9 @@
+<!-- starapps_core_start -->
+<!-- This code is automatically managed by StarApps Studio -->
+<!-- Please contact support@starapps.studio for any help -->
+<!-- File location: snippets/starapps-core.liquid -->{% comment %} meta_information_start {% endcomment %}
+{% comment %}Locale, Currency and other meta data of the store{% endcomment %}
+<script type="text/javascript" sa-language-info="true" data-no-instant="true">{% assign published_locales = shop.published_locales | where: "primary", true %}{%- if published_locales.size == 0 -%} (function(){console.log("LANGUAGE_ERROR ::: Default langaugae is not published in this market.")})(); {% endif %}</script>
+{% comment %} meta_information_end {% endcomment %}
+    
+<!-- starapps_core_end -->
