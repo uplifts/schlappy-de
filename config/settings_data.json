@@ -47,6 +47,10 @@
     "xtra_pay_heading": "Oder weitere Zahlungsmethoden im nächsten Schritt wählen",
     "xtra_pay_icons": "shopify:\/\/shop_images\/Bezahlanbieter_Icons.jpg",
     "sv_text_2": "Es sieht so aus als hast du bei deiner Bestellung keine Straße angegeben. Bist du sicher, dass du fortfahren möchtest?",
+    "discount_code_label_background": "#05b76f",
+    "discount_code_label_color": "#ffffff",
+    "discount_code_topbanner": "<b>Dein Rabattcode <strong class=\"dCodeName\">DiscountCode<\/strong> wurde aktiviert. Du sparst <strong class=\"dCodePercent\">20<\/strong>% auf deinen Einkauf!<\/b>",
+    "discount_code_badge": "<b>Dein Code <strong class=\"dCodeName\">DiscountCode<\/strong> wurde aktiviert<\/b>",
     "checkout_logo_image": "shopify:\/\/shop_images\/1_3672634f-db58-45a6-ae65-64e6c4929da0.png",
     "checkout_logo_position": "center",
     "checkout_logo_size": "small",
@@ -107,6 +111,11 @@
       },
       "855628211100114053": {
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "17327048248777170309": {
+        "type": "shopify:\/\/apps\/all-in-1-discount-on-cart\/blocks\/instant-load\/f428e1ae-8a34-4767-8189-f8339f3ab12b",
         "disabled": false,
         "settings": {}
       }

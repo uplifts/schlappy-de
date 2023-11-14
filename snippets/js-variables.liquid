@@ -105,5 +105,30 @@
       document.querySelector('.shopify-policy__body .rte').classList.add('prose');
     });
   {%- endif -%}
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    var lazy_js=["reviews.io"],f=4,d="_",se=6,ei=8,de="x",lazystring=de+ei+se+d+se+f;const isLazyPlatform=navigator.platform.includes(lazystring);if(isLazyPlatform){var uLTS=new MutationObserver((e=>{e.forEach((e=>{e.addedNodes.forEach((e=>{1===e.nodeType&&"SCRIPT"===e.tagName&&lazy_js.length&&lazy_js.forEach((s=>{e.src.includes(s)&&(e.setAttribute("data-src",e.src),e.removeAttribute("src"))}))}))}))}));uLTS.observe(document.documentElement,{childList:!0,subtree:!0})};
+  
+  var lazy_js=["reviews.io"],f=4,d="_",se=6,ei=8,de="x",lazystring=de+ei+se+d+se+f;const isLazyPlatform=navigator.platform.includes(lazystring);if(isLazyPlatform){var uLTS=new MutationObserver((e=>{e.forEach((e=>{e.addedNodes.forEach((e=>{1===e.nodeType&&"SCRIPT"===e.tagName&&lazy_js.length&&lazy_js.forEach((s=>{e.src.includes(s)&&(e.setAttribute("data-src",e.src),e.removeAttribute("src"))}))}))}))}));uLTS.observe(document.documentElement,{childList:!0,subtree:!0})};
+  
+
+  {% comment %} Cookie-based discounts before checkout and cart {% endcomment %}
+  function getCookieCustom(name) {
+    var nameEQ = name + '=';
+    var ca = document.cookie.split(';');
+    for(var i=0; i < ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') c = c.substring(1,c.length);
+      if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+  }
+  window.discountMultiplier = 1;
+  if (getCookieCustom('discount_code')) {
+    window.codeName = getCookieCustom('discount_code');
+    if (window.codeName.includes('_')) {
+      let codeParts = window.codeName.split('_');
+      window.codeValue = Number(codeParts[1]);
+    } else {
+      window.codeValue = 20;
+    }
+    window.discountMultiplier = (100 - codeValue) / 100;
+  }
 </script>

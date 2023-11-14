@@ -971,5 +971,36 @@
         "default": "Nein, Straßenname ergänzen."
       }
     ]
+  },
+  {
+    "name": "Discount codes",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Discount code labels"
+      },
+      {
+        "type": "color",
+        "id": "discount_code_label_background",
+        "label": "Banner background"
+      },
+      {
+        "type": "color",
+        "id": "discount_code_label_color",
+        "label": "Banner color"
+      },
+      {
+        "type": "liquid",
+        "id": "discount_code_topbanner",
+        "label": "Top banner text",
+        "info": "Put <strong class=\"dCodeName\"><\/strong> and <strong class=\"dCodePercent\"><\/strong> inside the text"
+      },
+      {
+        "type": "liquid",
+        "id": "discount_code_badge",
+        "label": "Badge text",
+        "info": "Put <strong class=\"dCodeName\"><\/strong> inside the text"
+      }
+    ]
   }
 ]

@@ -45,6 +45,17 @@
   }
 </style>
 
+{%- if settings.discount_code_topbanner != blank -%}
+  <div class="dCodePDPTopBanner d-none">
+    <div class="discode-topbanner">
+      {% render 'icon', icon: 'checkmark-circle-solid' %}
+      <div class="discode-topbanner--text">
+        {{ settings.discount_code_topbanner }}
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
 <div {% render 'section-properties', tight: true %}>
   <div class="product">
     {%- if product.media.size > 0 -%}
